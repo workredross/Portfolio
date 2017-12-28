@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+.display-name-hide{
+    display: none;
+}
+.temp{
+    font-family: 'Poiret One', cursive;
+    font-size: 1vmax
+}
+.display-name{
+    top: -3vh;
+    left: 1vw;
+    position: fixed;
+    font-family: 'Berkshire Swash', cursive;
+    font-size:1.5vmax;
+    animation: display-name 1s cubic-bezier(0.18, 0.89, 0.64, 2.01) forwards
+}
+@keyframes display-name{
+    to{
+        top:1vh;
+    }
+}

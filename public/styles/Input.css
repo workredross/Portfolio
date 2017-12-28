@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+.input-wrapper {
+  opacity: 0;
+  top: 45vh;
+  left: 60vw;
+  position: absolute;
+}
+
+.input-wrapper::after {
+  content: attr(data-text);
+  font-size: 2vmax;
+  line-height: 0;
+  height: 0;
+  max-width: 100%;
+  font-family: 'Sacramento', cursive;
+  border-bottom: 3px solid black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  overflow: hidden;
+  user-select: none;
+  color: transparent;
+}
+
+input {
+  color: black;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  outline: none;
+  width: auto;
+  min-width: 100%;
+  font-size: 2vmax;
+  line-height: 3em;
+  font-family: 'Sacramento', cursive;
+  border-bottom: 3px solid #33333357;
+  background-color: transparent;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:#33333357;
+}
+.input-animation{
+  animation: input 1.5s cubic-bezier(0.6, -0.28, 0.74, 0.05) forwards;
+  animation-delay: 4.5s
+}
+@keyframes input{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.input-animation-go{
+  animation: inputGo 1.5s cubic-bezier(0.6, -0.28, 0.74, 0.05) forwards;
+}
+@keyframes inputGo{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
