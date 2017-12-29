@@ -20,21 +20,21 @@
   .inner.one {
     left: 0%;
     top: 0%;
-    animation: rotate-one 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 5 ;
+    animation: rotate-one 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7 ;
     border-bottom: 3px solid rgba(0, 0, 0, 0.5);
   }
   
   .inner.two {
     right: 0%;
     top: 0%;
-    animation: rotate-two 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 5 ;
+    animation: rotate-two 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7 ;
     border-right: 3px solid rgba(0, 0, 0, 0.5);
   }
   
   .inner.three {
     right: 0%;
     bottom: 0%;
-    animation: rotate-three 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 5 ;
+    animation: rotate-three 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7 ;
     border-top: 3px solid rgba(0, 0, 0, 0.5);
   }
   

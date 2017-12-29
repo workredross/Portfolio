@@ -9,6 +9,8 @@ import OpenWeatherAPI from 'OpenWeatherAPI'
 require('style!css!LoaderCSS');
 require('style!css!ArrowDownCSS');
 require('style!css!BodyCSS');
+require('style!css!NavBarCSS');
+require('NavBarJS');
 
 class App extends Component {
   constructor(props) {

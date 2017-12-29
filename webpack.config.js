@@ -25,12 +25,14 @@ var webpack = require('webpack');
         LoaderCSS: 'public/styles/Loader.css',
         InputCSS: 'public/styles/Input.css',
         InputJS: 'public/js/Input.js',
-        AfterNameSubmit: 'public/js/AfterNameSubmit.js',
+        AfterNameSubmitJS: 'public/js/AfterNameSubmit.js',
         ArrowDownCSS: 'public/styles/ArrowDown.css',
         BodyCSS: 'public/styles/Body.css',
         DisplayNameCSS: 'public/styles/DisplayName.css',
         LatLong: 'public/components/Lat&Long.jsx',
-        OpenWeatherAPI: 'public/API/OpenWeatherAPI.jsx'
+        OpenWeatherAPI: 'public/API/OpenWeatherAPI.jsx',
+        NavBarCSS: 'public/styles/NavBar.css',
+        NavBarJS: 'public/js/NavBar.js'
       },
       extension: ['', '.js', '.jsx']
   },

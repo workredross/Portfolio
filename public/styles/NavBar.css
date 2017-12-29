@@ -1,0 +1,59 @@
+#nav-wrapper{
+    position: fixed;
+    right: 0vw;
+    z-index: 1;
+}
+#nav-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav-color{ 
+    opacity: 0; 
+    background-color:black;
+    animation: navColor 2s forwards
+}
+@keyframes navColor{
+    to{
+        opacity: 1;
+    }
+}
+#nav-item{
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+    font-size: 1vw;
+    display: block;
+    text-align: center;
+    padding: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    float: left;
+}
+.li-color{
+    color:white;
+
+}
+@keyframes liColor{
+    to{
+        transform: translateX(0px);
+    }
+}
+.active{
+    transform: translateX(-15px);
+    background-color:white;
+    animation: liColor .4s linear forwards;
+}
+
+.nav-dispaly-none{
+    display: none;
+}
+.nav-display-animation{
+    top: -3vh;
+    animation: display-name 1s cubic-bezier(0.18, 0.89, 0.64, 2.01) forwards;
+}
+@keyframes display-name{
+    to{
+        top:0vh;
+    }
+}

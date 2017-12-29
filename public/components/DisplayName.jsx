@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 require('style!css!DisplayNameCSS');
+require('AfterNameSubmitJS')
 
 class DisplayName extends Component {
     

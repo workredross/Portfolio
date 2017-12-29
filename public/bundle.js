@@ -113,7 +113,7 @@
 
 	var _Name2 = _interopRequireDefault(_Name);
 
-	var _DisplayName = __webpack_require__(175);
+	var _DisplayName = __webpack_require__(174);
 
 	var _DisplayName2 = _interopRequireDefault(_DisplayName);
 
@@ -136,6 +136,8 @@
 	__webpack_require__(206);
 	__webpack_require__(208);
 	__webpack_require__(210);
+	__webpack_require__(212);
+	__webpack_require__(214);
 
 	var App = function (_Component) {
 	  _inherits(App, _Component);
@@ -19923,7 +19925,6 @@
 
 	__webpack_require__(167);
 	__webpack_require__(172);
-	__webpack_require__(174);
 
 	var Name = function (_Component) {
 	  _inherits(Name, _Component);
@@ -21220,30 +21221,6 @@
 /* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function($) {"use strict";
-
-	$(document).ready(function () {
-	    $(".input-id").submit(function (event) {
-	        event.preventDefault();
-	        $(".input-id").addClass("input-animation-go");
-	        setTimeout(function () {
-	            $("#wrapper").removeClass("hide-arrow");
-	            $("#wrapper").addClass("wrapper");
-	            $("#page2").addClass("page2");
-	            $(".id-display-name").removeClass("display-name-hide");
-	            $(".id-display-name").addClass("display-name");
-	        }, 2000);
-	        // setTimeout(() => {
-
-	        // }, 3000);
-	    });
-	});
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)))
-
-/***/ },
-/* 175 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -21264,7 +21241,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(176);
+	__webpack_require__(175);
+	__webpack_require__(177);
 
 	var DisplayName = function (_Component) {
 	    _inherits(DisplayName, _Component);
@@ -21314,13 +21292,13 @@
 	exports.default = DisplayName;
 
 /***/ },
-/* 176 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(177);
+	var content = __webpack_require__(176);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// Prepare cssTransformation
 	var transform;
@@ -21345,19 +21323,48 @@
 	}
 
 /***/ },
-/* 177 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(169)(undefined);
 	// imports
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);", ""]);
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Poiret+One);", ""]);
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash|Poiret+One);", ""]);
 
 	// module
 	exports.push([module.id, ".display-name-hide{\n    display: none;\n}\n.temp{\n    font-family: 'Poiret One', cursive;\n    font-size: 1vmax\n}\n.display-name{\n    top: -3vh;\n    left: 1vw;\n    position: fixed;\n    font-family: 'Berkshire Swash', cursive;\n    font-size:1.5vmax;\n    animation: display-name 1s cubic-bezier(0.18, 0.89, 0.64, 2.01) forwards\n}\n@keyframes display-name{\n    to{\n        top:1vh;\n    }\n}\n", ""]);
 
 	// exports
 
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
+
+	$(document).ready(function () {
+
+	    $(".input-id").submit(function (event) {
+	        event.preventDefault();
+	        $(".input-id").addClass("input-animation-go");
+	        setTimeout(function () {
+	            $("#wrapper").removeClass("hide-arrow");
+	            $("#wrapper").addClass("wrapper");
+	            $("#page2").addClass("page2");
+	            $("#page3").addClass("page3");
+	            $("#page4").addClass("page4");
+	            $("#page5").addClass("page5");
+	            $("#page6").addClass("page6");
+	            $(".id-display-name").removeClass("display-name-hide");
+	            $(".id-display-name").addClass("display-name");
+	        }, 2000);
+	        setTimeout(function () {
+	            $("#nav-wrapper").removeClass("nav-dispaly-none");
+	            $("#nav-wrapper").addClass("nav-display-animation");
+	        }, 3000);
+	    });
+	});
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)))
 
 /***/ },
 /* 178 */
@@ -23034,7 +23041,7 @@
 
 
 	// module
-	exports.push([module.id, "  \n  .loader {\n    position: absolute;\n    top: 45vh;\n    left: 45vw;\n    width: 128px;\n    height: 128px;\n    border-radius: 50%;\n    perspective: 800px;\n  }\n  \n  .inner {\n    position: absolute;\n    box-sizing: border-box;\n    width: 100%;\n    height: 100%;\n    border-radius: 50%;  \n  }\n  \n  .inner.one {\n    left: 0%;\n    top: 0%;\n    animation: rotate-one 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 5 ;\n    border-bottom: 3px solid rgba(0, 0, 0, 0.5);\n  }\n  \n  .inner.two {\n    right: 0%;\n    top: 0%;\n    animation: rotate-two 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 5 ;\n    border-right: 3px solid rgba(0, 0, 0, 0.5);\n  }\n  \n  .inner.three {\n    right: 0%;\n    bottom: 0%;\n    animation: rotate-three 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 5 ;\n    border-top: 3px solid rgba(0, 0, 0, 0.5);\n  }\n  \n  @keyframes rotate-one {\n    0% {\n      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);\n    }\n    100% {\n      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);\n    }\n  }\n  \n  @keyframes rotate-two {\n    0% {\n      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);\n    }\n    100% {\n      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);\n    }\n  }\n  \n  @keyframes rotate-three {\n    0% {\n      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);\n    }\n    100% {\n      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);\n    }\n  }", ""]);
+	exports.push([module.id, "  \n  .loader {\n    position: absolute;\n    top: 45vh;\n    left: 45vw;\n    width: 128px;\n    height: 128px;\n    border-radius: 50%;\n    perspective: 800px;\n  }\n  \n  .inner {\n    position: absolute;\n    box-sizing: border-box;\n    width: 100%;\n    height: 100%;\n    border-radius: 50%;  \n  }\n  \n  .inner.one {\n    left: 0%;\n    top: 0%;\n    animation: rotate-one 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7 ;\n    border-bottom: 3px solid rgba(0, 0, 0, 0.5);\n  }\n  \n  .inner.two {\n    right: 0%;\n    top: 0%;\n    animation: rotate-two 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7 ;\n    border-right: 3px solid rgba(0, 0, 0, 0.5);\n  }\n  \n  .inner.three {\n    right: 0%;\n    bottom: 0%;\n    animation: rotate-three 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7 ;\n    border-top: 3px solid rgba(0, 0, 0, 0.5);\n  }\n  \n  @keyframes rotate-one {\n    0% {\n      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);\n    }\n    100% {\n      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);\n    }\n  }\n  \n  @keyframes rotate-two {\n    0% {\n      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);\n    }\n    100% {\n      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);\n    }\n  }\n  \n  @keyframes rotate-three {\n    0% {\n      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);\n    }\n    100% {\n      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);\n    }\n  }", ""]);
 
 	// exports
 
@@ -23124,10 +23131,113 @@
 
 
 	// module
-	exports.push([module.id, ".page2{\n    position: absolute;\n    top:100vh;\n    width:100vw;\n    height: 100vh;\n}\n#page1{\n    position: absolute;\n    width:100vw;\n    height: 100vh;\n}\nbody{\n    background-color:white;margin:0px;\n    overflow-x: hidden;\n}", ""]);
+	exports.push([module.id, "body{\n    margin: 0;\n    background-color:white;margin:0px;\n    overflow-x: hidden;\n}\n#page1{\n    position: absolute;\n    width:100vw;\n    height: 100vh;\n}\n.page2{\n    position: absolute;\n    top:100vh;\n    width:100vw;\n    height: 100vh;\n}\n.page3{\n    position: absolute;\n    top:200vh;\n    width:100vw;\n    height: 100vh;\n}\n.page4{\n    position: absolute;\n    top:300vh;\n    width:100vw;\n    height: 100vh;\n}\n.page5{\n    position: absolute;\n    top:400vh;\n    width:100vw;\n    height: 100vh;\n}\n.page6{\n    position: absolute;\n    top:500vh;\n    width:100vw;\n    height: 100vh;\n}\n\n", ""]);
 
 	// exports
 
+
+/***/ },
+/* 212 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(213);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// Prepare cssTransformation
+	var transform;
+
+	var options = {"hmr":true}
+	options.transform = transform
+	// add the styles to the DOM
+	var update = __webpack_require__(170)(content, options);
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../node_modules/css-loader/index.js!./NavBar.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!./NavBar.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 213 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(169)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, "#nav-wrapper{\n    position: fixed;\n    right: 0vw;\n    z-index: 1;\n}\n#nav-bar{\n    list-style-type: none;\n    margin: 0;\n    padding: 0;\n    overflow: hidden;\n}\n.nav-color{ \n    opacity: 0; \n    background-color:black;\n    animation: navColor 2s forwards\n}\n@keyframes navColor{\n    to{\n        opacity: 1;\n    }\n}\n#nav-item{\n    font-family: 'Poiret One', cursive;\n    font-weight: bolder;\n    font-size: 1vw;\n    display: block;\n    text-align: center;\n    padding: 1vw;\n    padding-left: 5vw;\n    padding-right: 5vw;\n    float: left;\n}\n.li-color{\n    color:white;\n\n}\n@keyframes liColor{\n    to{\n        transform: translateX(0px);\n    }\n}\n.active{\n    transform: translateX(-15px);\n    background-color:white;\n    animation: liColor .4s linear forwards;\n}\n\n.nav-dispaly-none{\n    display: none;\n}\n.nav-display-animation{\n    top: -3vh;\n    animation: display-name 1s cubic-bezier(0.18, 0.89, 0.64, 2.01) forwards;\n}\n@keyframes display-name{\n    to{\n        top:0vh;\n    }\n}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 214 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {'use strict';
+
+	$(document).ready(function () {
+	    var $window = $(window);
+	    $window.scroll(function () {
+
+	        if ($window.scrollTop() > window.innerHeight * .05 && $window.scrollTop() < window.innerHeight * .6) {
+	            $('.one').removeClass('li-color');
+	            $('.one').addClass('active');
+	            $('.two').removeClass('active');
+	            $('.two').addClass('li-color');
+	            $('.three').addClass('li-color');
+	            $('.four').addClass('li-color');
+	            $('.five').addClass('li-color');
+	            $('.six').addClass('li-color');
+	            $("#nav-bar").addClass('nav-color');
+	        } else if ($window.scrollTop() >= window.innerHeight * .6 && $window.scrollTop() < window.innerHeight * 1.6) {
+	            $('.one').removeClass('active');
+	            $('.one').addClass('li-color');
+	            $('.two').removeClass('li-color');
+	            $('.two').addClass('active');
+	            $('.three').removeClass('active');
+	            $('.three').addClass('li-color');
+	        } else if ($window.scrollTop() >= window.innerHeight * 1.6 && $window.scrollTop() < window.innerHeight * 2.6) {
+	            $('.two').removeClass('active');
+	            $('.two').addClass('li-color');
+	            $('.three').removeClass('li-color');
+	            $('.three').addClass('active');
+	            $('.four').removeClass('active');
+	            $('.four').addClass('li-color');
+	        } else if ($window.scrollTop() >= window.innerHeight * 2.6 && $window.scrollTop() < window.innerHeight * 3.6) {
+	            $('.three').removeClass('active');
+	            $('.three').addClass('li-color');
+	            $('.four').removeClass('li-color');
+	            $('.four').addClass('active');
+	            $('.five').removeClass('active');
+	            $('.five').addClass('li-color');
+	        } else if ($window.scrollTop() >= window.innerHeight * 3.6 && $window.scrollTop() < window.innerHeight * 4.6) {
+	            $('.four').removeClass('active');
+	            $('.four').addClass('li-color');
+	            $('.five').removeClass('li-color');
+	            $('.five').addClass('active');
+	            $('.six').removeClass('active');
+	            $('.six').addClass('li-color');
+	        } else if ($window.scrollTop() >= window.innerHeight * 4.6 && $window.scrollTop() < window.innerHeight * 6) {
+	            $('.five').removeClass('active');
+	            $('.five').addClass('li-color');
+	            $('.six').removeClass('li-color');
+	            $('.six').addClass('active');
+	        }
+	    });
+	});
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)))
 
 /***/ }
 /******/ ]);

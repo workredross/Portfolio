@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { log } from 'util';
 require('style!css!InputCSS');
 require('InputJS');
-require('AfterNameSubmit')
 class Name extends Component {
   
   handleSubmit (e) {
