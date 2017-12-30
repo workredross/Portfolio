@@ -8,7 +8,6 @@
     border-radius: 50%;
     perspective: 800px;
   }
-  
   .inner {
     position: absolute;
     box-sizing: border-box;

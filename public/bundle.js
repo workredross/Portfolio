@@ -138,6 +138,8 @@
 	__webpack_require__(210);
 	__webpack_require__(212);
 	__webpack_require__(214);
+	__webpack_require__(215);
+	__webpack_require__(217);
 
 	var App = function (_Component) {
 	  _inherits(App, _Component);
@@ -21331,7 +21333,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash|Poiret+One);", ""]);
 
 	// module
-	exports.push([module.id, ".display-name-hide{\n    display: none;\n}\n.temp{\n    font-family: 'Poiret One', cursive;\n    font-size: 1vmax\n}\n.display-name{\n    top: -3vh;\n    left: 1vw;\n    position: fixed;\n    font-family: 'Berkshire Swash', cursive;\n    font-size:1.5vmax;\n    animation: display-name 1s cubic-bezier(0.18, 0.89, 0.64, 2.01) forwards\n}\n@keyframes display-name{\n    to{\n        top:1vh;\n    }\n}\n", ""]);
+	exports.push([module.id, ".display-name-hide{\n    display: none;\n}\n.temp{\n    z-index: 2;\n    font-family: 'Poiret One', cursive;\n    font-size: 1vmax\n}\n.display-name{\n    z-index: 2;\n    top: -3vh;\n    left: 1vw;\n    position: fixed;\n    font-family: 'Berkshire Swash', cursive;\n    font-size:1.5vmax;\n    animation: display-name 1s cubic-bezier(0.18, 0.89, 0.64, 2.01) forwards\n}\n@keyframes display-name{\n    to{\n        top:1vh;\n    }\n}\n", ""]);
 
 	// exports
 
@@ -21347,6 +21349,9 @@
 	    $(".input-id").submit(function (event) {
 	        event.preventDefault();
 	        $(".input-id").addClass("input-animation-go");
+	        $(".loader").addClass("input-animation-go");
+	        $(".perspective").removeClass("hide-cards");
+	        $(".perspective").addClass("show-card");
 	        setTimeout(function () {
 	            $("#wrapper").removeClass("hide-arrow");
 	            $("#wrapper").addClass("wrapper");
@@ -21357,11 +21362,19 @@
 	            $("#page6").addClass("page6");
 	            $(".id-display-name").removeClass("display-name-hide");
 	            $(".id-display-name").addClass("display-name");
+	            $('.card-container').toggleClass("spread");
 	        }, 2000);
 	        setTimeout(function () {
 	            $("#nav-wrapper").removeClass("nav-dispaly-none");
 	            $("#nav-wrapper").addClass("nav-display-animation");
+	            $('#page3').removeClass('hide');
+	            $('#page3').addClass('show');
 	        }, 3000);
+	    });
+
+	    //cards
+	    $('.card-container').click(function () {
+	        $(this).toggleClass("spread");
 	    });
 	});
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)))
@@ -23041,7 +23054,7 @@
 
 
 	// module
-	exports.push([module.id, "  \n  .loader {\n    position: absolute;\n    top: 45vh;\n    left: 45vw;\n    width: 128px;\n    height: 128px;\n    border-radius: 50%;\n    perspective: 800px;\n  }\n  \n  .inner {\n    position: absolute;\n    box-sizing: border-box;\n    width: 100%;\n    height: 100%;\n    border-radius: 50%;  \n  }\n  \n  .inner.one {\n    left: 0%;\n    top: 0%;\n    animation: rotate-one 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7 ;\n    border-bottom: 3px solid rgba(0, 0, 0, 0.5);\n  }\n  \n  .inner.two {\n    right: 0%;\n    top: 0%;\n    animation: rotate-two 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7 ;\n    border-right: 3px solid rgba(0, 0, 0, 0.5);\n  }\n  \n  .inner.three {\n    right: 0%;\n    bottom: 0%;\n    animation: rotate-three 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7 ;\n    border-top: 3px solid rgba(0, 0, 0, 0.5);\n  }\n  \n  @keyframes rotate-one {\n    0% {\n      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);\n    }\n    100% {\n      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);\n    }\n  }\n  \n  @keyframes rotate-two {\n    0% {\n      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);\n    }\n    100% {\n      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);\n    }\n  }\n  \n  @keyframes rotate-three {\n    0% {\n      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);\n    }\n    100% {\n      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);\n    }\n  }", ""]);
+	exports.push([module.id, "  \n  .loader {\n    position: absolute;\n    top: 45vh;\n    left: 45vw;\n    width: 128px;\n    height: 128px;\n    border-radius: 50%;\n    perspective: 800px;\n  }\n  .inner {\n    position: absolute;\n    box-sizing: border-box;\n    width: 100%;\n    height: 100%;\n    border-radius: 50%;  \n  }\n  \n  .inner.one {\n    left: 0%;\n    top: 0%;\n    animation: rotate-one 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7 ;\n    border-bottom: 3px solid rgba(0, 0, 0, 0.5);\n  }\n  \n  .inner.two {\n    right: 0%;\n    top: 0%;\n    animation: rotate-two 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7 ;\n    border-right: 3px solid rgba(0, 0, 0, 0.5);\n  }\n  \n  .inner.three {\n    right: 0%;\n    bottom: 0%;\n    animation: rotate-three 1.0s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7 ;\n    border-top: 3px solid rgba(0, 0, 0, 0.5);\n  }\n  \n  @keyframes rotate-one {\n    0% {\n      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);\n    }\n    100% {\n      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);\n    }\n  }\n  \n  @keyframes rotate-two {\n    0% {\n      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);\n    }\n    100% {\n      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);\n    }\n  }\n  \n  @keyframes rotate-three {\n    0% {\n      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);\n    }\n    100% {\n      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);\n    }\n  }", ""]);
 
 	// exports
 
@@ -23131,7 +23144,7 @@
 
 
 	// module
-	exports.push([module.id, "body{\n    margin: 0;\n    background-color:white;margin:0px;\n    overflow-x: hidden;\n}\n#page1{\n    position: absolute;\n    width:100vw;\n    height: 100vh;\n}\n.page2{\n    position: absolute;\n    top:100vh;\n    width:100vw;\n    height: 100vh;\n}\n.page3{\n    position: absolute;\n    top:200vh;\n    width:100vw;\n    height: 100vh;\n}\n.page4{\n    position: absolute;\n    top:300vh;\n    width:100vw;\n    height: 100vh;\n}\n.page5{\n    position: absolute;\n    top:400vh;\n    width:100vw;\n    height: 100vh;\n}\n.page6{\n    position: absolute;\n    top:500vh;\n    width:100vw;\n    height: 100vh;\n}\n\n", ""]);
+	exports.push([module.id, "body{\n    margin: 0;\n    background-color:white;margin:0px;\n    overflow-x: hidden;\n}\n#page1{\n    position: absolute;\n    width:100vw;\n    height: 100vh;\n}\n.page2{\n    position: absolute;\n    top:100vh;\n    width:100vw;\n    height: 100vh;\n    background-color: #eeeeee\n}\n.page3{\n    position: absolute;\n    top:200vh;\n    width:100vw;\n    height: 100vh;\n}\n.page4{\n    position: absolute;\n    top:300vh;\n    width:100vw;\n    height: 100vh;\n}\n.page5{\n    position: absolute;\n    top:400vh;\n    width:100vw;\n    height: 100vh;\n}\n.page6{\n    position: absolute;\n    top:500vh;\n    width:100vw;\n    height: 100vh;\n}\n\n", ""]);
 
 	// exports
 
@@ -23176,7 +23189,7 @@
 
 
 	// module
-	exports.push([module.id, "#nav-wrapper{\n    position: fixed;\n    right: 0vw;\n    z-index: 1;\n}\n#nav-bar{\n    list-style-type: none;\n    margin: 0;\n    padding: 0;\n    overflow: hidden;\n}\n.nav-color{ \n    opacity: 0; \n    background-color:black;\n    animation: navColor 2s forwards\n}\n@keyframes navColor{\n    to{\n        opacity: 1;\n    }\n}\n#nav-item{\n    font-family: 'Poiret One', cursive;\n    font-weight: bolder;\n    font-size: 1vw;\n    display: block;\n    text-align: center;\n    padding: 1vw;\n    padding-left: 5vw;\n    padding-right: 5vw;\n    float: left;\n}\n.li-color{\n    color:white;\n\n}\n@keyframes liColor{\n    to{\n        transform: translateX(0px);\n    }\n}\n.active{\n    transform: translateX(-15px);\n    background-color:white;\n    animation: liColor .4s linear forwards;\n}\n\n.nav-dispaly-none{\n    display: none;\n}\n.nav-display-animation{\n    top: -3vh;\n    animation: display-name 1s cubic-bezier(0.18, 0.89, 0.64, 2.01) forwards;\n}\n@keyframes display-name{\n    to{\n        top:0vh;\n    }\n}", ""]);
+	exports.push([module.id, "#nav-wrapper{\n    position: fixed;\n    right: 0vw;\n    z-index: 1;\n}\n#nav-bar{\n    list-style-type: none;\n    margin: 0;\n    padding: 0;\n    overflow: hidden;\n}\n.nav-color{ \n    opacity: 0; \n    background-color:black;\n    animation: navColor 2s forwards\n}\n@keyframes navColor{\n    to{\n        opacity: 1;\n    }\n}\n#nav-item{\n    font-family: 'Poiret One', cursive;\n    font-weight: bolder;\n    font-size: 1vw;\n    display: block;\n    text-align: center;\n    padding: 1vw;\n    padding-left: 5vw;\n    padding-right: 5vw;\n    float: left;\n}\n.li-color{\n    color:white;\n\n}\n@keyframes liColor{\n    to{\n        transform: translateX(0px);\n    }\n}\n.active{\n    transform: translateX(-15px);\n    background-color:white;\n    animation: liColor .3s linear forwards;\n}\n\n.nav-dispaly-none{\n    display: none;\n}\n.nav-display-animation{\n    top: -3vh;\n    animation: display-name 1s cubic-bezier(0.18, 0.89, 0.64, 2.01) forwards;\n}\n@keyframes display-name{\n    to{\n        top:0vh;\n    }\n}", ""]);
 
 	// exports
 
@@ -23238,6 +23251,96 @@
 	    });
 	});
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)))
+
+/***/ },
+/* 215 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(216);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// Prepare cssTransformation
+	var transform;
+
+	var options = {"hmr":true}
+	options.transform = transform
+	// add the styles to the DOM
+	var update = __webpack_require__(170)(content, options);
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../node_modules/css-loader/index.js!./Skills.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!./Skills.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 216 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(169)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, "/**\n* VARIABLES\n**/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n\n/**\n* CARD\n**/\n#html .card {\n  position: absolute;\n  top: 3vmax;\n  left: 28vmax;\n  width: 19vmax;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n#CSS .card {\n  position: absolute;\n  top: 3vmax;\n  left: 53vmax;\n  width: 19vmax;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n#JS .card {\n  position: absolute;\n  top: 3vmax;\n  left: 78vmax;\n  width: 19vmax;;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n#AI .card {\n  position: absolute;\n  top: 28vmax;\n  left: 3vmax;\n  width: 19vmax;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n#Bootstrap .card {\n  position: absolute;\n  top: 28vmax;\n  left: 28vmax;\n  width: 19vmax;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n#GSAP .card {\n  position: absolute;\n  top: 28vmax;\n  left: 53vmax;\n  width: 19vmax;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n#React .card {\n  position: absolute;\n  top: 28vmax;\n  left: 78vmax;\n  width: 19vmax;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n.card a {\n  color: inherit;\n  text-decoration: none;\n}\n\n.card:hover {\n  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);\n          box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);\n}\n\n/**\n* DATE\n**/\n/*  */\n\n/**\n* THUMB\n**/\n.card__thumb {\n  height: 12.76vmax;\n  overflow: hidden;\n  background-color: #000;\n  -webkit-transition: height 0.5s;\n  transition: height 0.5s;\n  /*background: url('http://lorempicsum.com/futurama/370/245/3') no-repeat;\n  background-size: 100%;*/\n}\n.card__thumb img{\n    max-height:100%;\n  display: block;\n  opacity: 1;\n  -webkit-transform: scale(1);\n          transform: scale(1);\n  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;\n  transition: opacity 0.5s, -webkit-transform 0.5s;\n  transition: opacity 0.5s, transform 0.5s;\n  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;\n}\n.card:hover .card__thumb {\n    height: 150px;\n}\n\n.card:hover .card__thumb img {\n\n  opacity: 0.6;\n  -webkit-transform: scale(1.2);\n          transform: scale(1.2);\n}\n\n/**\n* BODY\n**/\n.card__body {\n  position: relative;\n  height: 9.2vmax;\n  padding: 20px;\n  -webkit-transition: height 0.5s;\n  transition: height 0.5s;\n}\n.card:hover .card__body {\n  height: 15.6vmax;\n}\n\n.card__category {\n  font-family: 'Poiret One', cursive;\n  font-weight: bolder;\n  position: absolute;\n  top: -25px;\n  left: 0;\n  height: 25px;\n  padding: 0 15px;\n  background-color: #eeeeee;\n  color: black;\n  text-transform: uppercase;\n  font-size: 11px;\n  line-height: 25px;\n}\n\n.card__title {\n  font-family: 'Poiret One', cursive;\n  margin: 0;\n  padding: 0 0 10px 0;\n  color: #000;\n  font-size: 1.14vmax;\n  font-weight: bold;\n  text-transform: uppercase;\n}\n\n.card__subtitle {\n  font-family: 'Poiret One', cursive;\n  margin: 0;\n  padding: 0 0 10px 0;\n  font-size: 1vmax;\n  color: rgba(0, 0, 0, 0.575);\n}\n\n.card__description {\n  font-family: 'Poiret One', cursive;\n  font-weight: bolder;\n  position: absolute;\n  left: 1.1vmax;\n  right: 1.1vmax;\n  bottom: 2.91vmax;\n  margin: 0;\n  padding: 0;\n  color: #666C74;\n  line-height: 1.4vmax;\n  opacity: 0;\n  -webkit-transform: translateY(2.34vmax);\n          transform: translateY(2.34vmax);\n  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;\n  transition: opacity 0.3s, -webkit-transform 0.3s;\n  transition: opacity 0.3s, transform 0.3s;\n  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;\n  -webkit-transition-delay: 0s;\n          transition-delay: 0s;\n}\n.card:hover .card__description {\n  opacity: 1;\n  -webkit-transform: translateY(0);\n          transform: translateY(0);\n  -webkit-transition-delay: 0.2s;\n          transition-delay: 0.2s;\n}\n.hide{\n  display: none\n}\n.show{\n  display: block;\n  font-family: 'Poiret One', cursive;\n}\n#heading{\n  font-weight: bolder;\n  position: absolute;\n  left: 3vmax;\n  top: 10vmax;\n  font-size: 3vmax;\n}\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 217 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(218);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// Prepare cssTransformation
+	var transform;
+
+	var options = {"hmr":true}
+	options.transform = transform
+	// add the styles to the DOM
+	var update = __webpack_require__(170)(content, options);
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../node_modules/css-loader/index.js!./Cards.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!./Cards.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 218 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(169)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".hide-cards{\n    display: none;\n}\n.show-card{\n    opacity: 0;\n    display: block;\n    animation: cardShow 1s forwards;\n    animation-delay: 1s\n}\n@keyframes cardShow{\n    to{\n        opacity: 1;\n    }\n}\n  .inspired {\n    border: 1px solid rgba(0, 0, 0, 0.1);\n    border-radius: 4px;\n    font-weight: 400;\n    position: absolute;\n    bottom: 6px;\n    right: 6px;\n    z-index: 10;\n  }\n  .inspired a {\n    color: rgba(0, 0, 0, 0.4);\n    display: inline-block;\n    font-size: 12px;\n    padding: 0 24px 10px;\n    text-decoration: none;\n  }\n  .message {\n    color: #e7e7e7;\n    text-shadow: 0 0 3px #b4b4b4;\n    font-size: 70px;\n    font-weight: 200;\n    letter-spacing: -0.01em;\n    line-height: 60px;\n    position: absolute;\n    transform: rotate(-31deg) translate3d(50%, 130%, 0);\n    width: 3em;\n  }\n  .card {\n    background: #ff6565;\n    border-radius: 16px;\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4);\n    height: 45vw;\n    max-height: 450px;\n    max-width: 320px;\n    min-height: 225px;\n    min-width: 160px;\n    position: absolute;\n    transition: all cubic-bezier(0.57, 1.46, 0.97, 1.3) 1s;\n    width: 32vw;\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n  }\n  .card-card1 {\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 4px 12px 0 rgba(151, 150, 146, 0.4);\n    color: white;\n  }\n  .card-card2 {\n    color: white;\n  }\n  .card-card2 .card__value {\n    transform: translatex(-2px);\n  }\n  .card-card2 .card__suit {\n    margin-top: 0.8rem;\n  }\n  .card-card3 {\n    color: white;\n  }\n  .card-card3 .card__suit {\n    margin-top: 0.8rem;\n  }\n  .card-card4 {\n    color: white;\n  }\n  .card-card4 .card__suit {\n    margin-top: 0.7rem;\n  }\n  .card__face {\n    padding: 1.8rem 1.6rem;\n    position: absolute;\n  }\n  .card__face--btm {\n    bottom: 0;\n    right: 0;\n    transform: rotate(180deg);\n  }\n  .card__value {\n    display: block;\n    text-align: center;\n    width: 22px;\n  }\n  .card__suit {\n    display: block;\n    margin-top: 0.5rem;\n  }\n  div.perspective {\n    height: 100vh;\n    perspective: 2000px;\n    position: absolute;\n    width: 100vw;\n  }\n  .card-container {\n    cursor: pointer;\n    left: 50%;\n    position: absolute;\n    top: 40%;\n    transform: rotateX(35deg) translate3d(-50%, -50%, 0);\n    height: 45vw;\n    width: 32vw;\n    max-height: 450px;\n    max-width: 320px;\n  }\n  .card-card1 {\n    transform: rotate(-31deg) translate3d(-50%, -10%, 0);\n  }\n  .card-card2 {\n    transform: rotate(-31deg) translate3d(-49.5%, -10.5%, 0);\n  }\n  .card-card3 {\n    transform: rotate(-31deg) translate3d(-49%, -11%, 0);\n  }\n  .card-card4 {\n    transform: rotate(-31deg) translate3d(-48.5%, -11.5%, 0);\n  }\n  .card-container.spread .card-card1 {\n    transform: rotate(-31deg) translate3d(-50%, -10%, 0);\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 4px 12px 0 rgba(151, 150, 146, 0.4);\n  }\n  .card-container.spread .card-card2 {\n    transform: rotate(-4.5deg) translatex(-22%);\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 2px 6px 0 rgba(151, 150, 146, 0.4);\n  }\n  .card-container.spread .card-card3 {\n    transform: rotate(5.8deg) translatex(10%);\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 2px 4px 0 rgba(151, 150, 146, 0.4);\n  }\n  .card-container.spread .card-card4 {\n    transform: rotate(22.5deg) translate3d(40%, -5%, 0);\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 2px 4px 0 rgba(151, 150, 146, 0.4);\n  }\n  @keyframes card1 {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 1;\n    }\n  }\n  ", ""]);
+
+	// exports
+
 
 /***/ }
 /******/ ]);

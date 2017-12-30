@@ -3,10 +3,12 @@
     display: none;
 }
 .temp{
+    z-index: 2;
     font-family: 'Poiret One', cursive;
     font-size: 1vmax
 }
 .display-name{
+    z-index: 2;
     top: -3vh;
     left: 1vw;
     position: fixed;

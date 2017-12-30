@@ -42,7 +42,7 @@
 .active{
     transform: translateX(-15px);
     background-color:white;
-    animation: liColor .4s linear forwards;
+    animation: liColor .3s linear forwards;
 }
 
 .nav-dispaly-none{

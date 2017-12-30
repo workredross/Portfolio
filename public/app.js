@@ -11,6 +11,8 @@ require('style!css!ArrowDownCSS');
 require('style!css!BodyCSS');
 require('style!css!NavBarCSS');
 require('NavBarJS');
+require('style!css!SkillsCSS');
+require('style!css!CardsCSS');
 
 class App extends Component {
   constructor(props) {

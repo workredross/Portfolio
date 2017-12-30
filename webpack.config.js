@@ -23,6 +23,7 @@ var webpack = require('webpack');
         Name: 'public/components/Name.jsx',
         DisplayName: 'public/components/DisplayName.jsx',
         LoaderCSS: 'public/styles/Loader.css',
+        CardsCSS: 'public/styles/Cards.css' ,
         InputCSS: 'public/styles/Input.css',
         InputJS: 'public/js/Input.js',
         AfterNameSubmitJS: 'public/js/AfterNameSubmit.js',
@@ -32,7 +33,8 @@ var webpack = require('webpack');
         LatLong: 'public/components/Lat&Long.jsx',
         OpenWeatherAPI: 'public/API/OpenWeatherAPI.jsx',
         NavBarCSS: 'public/styles/NavBar.css',
-        NavBarJS: 'public/js/NavBar.js'
+        NavBarJS: 'public/js/NavBar.js',
+        SkillsCSS: 'public/styles/Skills.css'
       },
       extension: ['', '.js', '.jsx']
   },
