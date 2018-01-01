@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html>
-
+  
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css"
+  />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
 </head>
-
 <body>
   <div id="nav-wrapper" class="nav-dispaly-none">
     <ul id="nav-bar" class="">
       <li id="nav-item" class="one">Home</li>
-      <li id="nav-item" class="two">Services</li>
-      <li id="nav-item" class="three">Skills</li>
-      <li id="nav-item" class="four">Blogs</li>
-      <li id="nav-item" class="five">Projects</li>
-      <li id="nav-item" class="six">About</li>
+      <li id="nav-item" class="two">Skills</li>
+      <li id="nav-item" class="three">Blogs</li>
+      <li id="nav-item" class="four">Projects</li>
+      <li id="nav-item" class="five">About</li>
     </ul>
+  </div>
+  <div class = "social hide">
+    <div class="social-icons">
+      <a target="_blank" href="https://github.com/workredross" class="social-icon social-icon--github">
+        <i class="fa fa-github"></i>
+        <div class="tooltip">Github</div>
+      </a>
+      <a target="_blank" href="sadsa" class="social-icon social-icon--twitter">
+        <i class="fa fa-twitter"></i>
+        <div class="tooltip">Twitter</div>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/kanishk-srivastava-7259b6156" class="social-icon social-icon--linkedin">
+        <i class="fa fa-linkedin"></i>
+        <div class="tooltip">LinkedIn</div>
+      </a>
+        <!-- <a class="social-icon social-icon--codepen">
+            <i class="fa fa-codepen"></i>
+            <div class="tooltip">Codepen</div>
+        </a> -->
+    </div>
   </div>
   <div id="page1">
     <div class="loader">
@@ -148,104 +170,111 @@
     </div>
     <div id="app"></div>
   </div>
-  <div id="page2"></div>
-  <div id="page3" class="hide">
-    <div id="heading">S K I L L S</div id="heading">
-    <div id="html">
-      <article class="card">
-        <header class="card__thumb">
-          <img src="./images/HTML.png" />
-        </header>
-        <div class="card__body">
-          <div class="card__category">Language</div>
-          <h2 class="card__title">HTML</h2>
-          <div class="card__subtitle"> Markup language for creating web pages and web applications.</div>
-          <p class="card__description">The markup tells the Web browser how to display a Web page's words and images for the user.</p>
-        </div>
-      </article>
+  <div id="page2" class="hide">
+    <div id="tools">    HTML5 &nbsp; CSS3 &nbsp; Bootstrap &nbsp; Java Script &nbsp; jQuery &nbsp; React.js &nbsp; GSAP &nbsp; Abode Illustrator &nbsp;
     </div>
-    <div id="CSS">
-      <article class="card">
-        <header class="card__thumb">
-          <img src="./images/CSS.png" />
-        </header>
-        <div class="card__body">
-          <div class="card__category">Language</div>
-          <h2 class="card__title">CSS</h2>
-          <div class="card__subtitle">Mechanism for adding styles.</div>
-          <p class="card__description">CSS is a style language that defines layout of HTML documents.</p>
+    <div class="container">
+      <div class="row services">
+        <div id="heading-services" class="col-md-3 col-sm-3 mt-5">SKILLS</div>
+        <div class="col-md-3 col-sm-3 ">
+          <div class="service-box">
+            <div class="service-icon yellow">
+              <div class="front-content">
+                <i class="fa fa-trophy"></i>
+                <h3>design</h3>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>design</h3>
+              <p>Design website from scratch. Have an idea just shoot to me.</p>
+            </div>
+          </div>
         </div>
-      </article>
+        <div class="col-md-3 col-sm-3">
+          <div class="service-box ">
+            <div class="service-icon red">
+              <div class="front-content">
+                <i class="fa fa-trophy"></i>
+                <h3>Ui Developer</h3>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Developer</h3>
+              <p>So, you are good at designing but want someone to make it on the internet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <div class="service-box">
+            <div class="service-icon grey">
+              <div class="front-content">
+                <i class="fa fa-paper-plane-o"></i>
+                <h3>java script</h3>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>java script</h3>
+              <p>You dont want a static page but also want some user interaction. Java Script is the way to go.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="JS">
-      <article class="card">
-        <header class="card__thumb">
-          <img src="./images/JS.png" />
-        </header>
-        <div class="card__body">
-          <div class="card__category">Language</div>
-          <h2 class="card__title">Java Script</h2>
-          <div class="card__subtitle">JavaScript is the programming language of HTML and the Web.</div>
-          <p class="card__description">The language makes the website interactive for the users</p>
+    <section id="services" class="sec-services">
+      <div class="container">
+        <hr />
+        <div class="row">
+          <div class="col-sm-4">
+            <i class="fa fa-4x fa-paint-brush"></i>
+            <h2 class="h3">Beautiful Design</h2>
+            <p>Every website is beautiful, unique and tailored to suit your needs and requirements.</p>
+          </div>
+          <div class="col-sm-4">
+            <i class="fa fa-4x fa-code"></i>
+            <h2 class="h3">Clean Code</h2>
+            <p>All websites are written in valid and clean HTML5 / CSS3 &amp; JavaScript (jQuery).</p>
+          </div>
+          <div class="col-sm-4">
+            <i class="fa fa-4x fa-tablet"></i>
+            <h2 class="h3">Always Responsive</h2>
+            <p>All websites are responsive. They will look great on desktop, tablets and mobile phones too.</p>
+          </div>
         </div>
-      </article>
+      </div>
+    </section>
+  </div>
+  <div id="page3"></div>
+  <div id="page4"></div>
+  <div id="page5" class="hide">
+    <div class="about">About</div>
+    <div id="form">
+      <form id="contact">
+        <div class="container">
+          <div class="head">
+            <h2>Say Hello</h2>
+          </div>
+          <input type="text" name="name" placeholder="Name" id="name" />
+          <br />
+          <input type="email" name="email" placeholder="Email" id="email" />
+          <br />
+          <textarea type="text" name="message" placeholder="Message" id="msg"></textarea>
+          <br />
+          <div id="confirm" class="hide">Message Sent</div>
+          <button id="submit" class="button">
+            Send!
+          </button>
+        </div>
+      </form>
     </div>
-    <div id="AI">
-      <article class="card">
-        <header class="card__thumb">
-          <img src="./images/AI.png" />
-        </header>
-        <div class="card__body">
-          <div class="card__category">Software</div>
-          <h2 class="card__title">Adobe Illustrator</h2>
-          <div class="card__subtitle">Used for creating vector images</div>
-          <p class="card__description">Creates SVGs and helps in creating unrealistic CSS animation. Also a great editor.</p>
-        </div>
-      </article>
+    <div id="about" class="">
+      <img src="./images/kanishk.jpg" class="image-me" height="250" width="250" alt="image of me">
     </div>
-    <div id="Bootstrap">
-      <article class="card">
-        <header class="card__thumb">
-          <img src="./images/Bootstrap.png" />
-        </header>
-        <div class="card__body">
-          <div class="card__category">Framework</div>
-          <h2 class="card__title">Bootstrap</h2>
-          <div class="card__subtitle">CSS framework</div>
-          <p class="card__description">Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites.</p>
-        </div>
-      </article>
-    </div>
-    <div id="GSAP">
-      <article class="card">
-        <header class="card__thumb">
-          <img src="./images/GSAP.png" />
-        </header>
-        <div class="card__body">
-          <div class="card__category">Framework</div>
-          <h2 class="card__title">GreenSock</h2>
-          <div class="card__subtitle">High-performance HTML5 animations</div>
-          <p class="card__description">Ultra high-performance, professional-grade animation for the modern web</p>
-        </div>
-      </article>
-    </div>
-    <div id="React">
-      <article class="card">
-        <header class="card__thumb">
-          <img src="./images/reactJS.png" />
-        </header>
-        <div class="card__body">
-          <div class="card__category">Library</div>
-          <h2 class="card__title">React and Redux</h2>
-          <div class="card__subtitle">Dynamically render elements</div>
-          <p class="card__description">React is a declarative, efficient, and flexible JavaScript library for building user interfaces. </p>
-        </div>
-      </article>
+    <div class="text">
+      Hello I am Kanishk Srivastava.<br/>
+      I am a front-end web developer
     </div>
   </div>
-  <div id="page4"></div>
-  <div id="page5"></div>
-  <div id="page6"></div>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script type="text/javascript" src="bundle.js"></script>
 </body>
 

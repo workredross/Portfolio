@@ -38,7 +38,7 @@ $(document).ready(function () {
             $('.five').removeClass('active')
             $('.five').addClass('li-color')
         }
-        else if($window.scrollTop()>= window.innerHeight*3.6 && $window.scrollTop()<window.innerHeight*4.6){
+        else if($window.scrollTop()>= window.innerHeight*3.6 && $window.scrollTop()<window.innerHeight*5){
             $('.four').removeClass('active')
             $('.four').addClass('li-color')
             $('.five').removeClass('li-color')
@@ -46,11 +46,5 @@ $(document).ready(function () {
             $('.six').removeClass('active')
             $('.six').addClass('li-color')
         }
-        else if($window.scrollTop()>= window.innerHeight*4.6 && $window.scrollTop()<window.innerHeight*6){
-            $('.five').removeClass('active')
-            $('.five').addClass('li-color')
-            $('.six').removeClass('li-color')
-            $('.six').addClass('active')
-        }
-      });
+    });
 })

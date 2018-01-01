@@ -34,7 +34,10 @@ var webpack = require('webpack');
         OpenWeatherAPI: 'public/API/OpenWeatherAPI.jsx',
         NavBarCSS: 'public/styles/NavBar.css',
         NavBarJS: 'public/js/NavBar.js',
-        SkillsCSS: 'public/styles/Skills.css'
+        SkillsCSS:'public/styles/Skills.css',
+        FormSubmitJS : 'public/js/FormSubmit.js',
+        InputFormCSS:'public/styles/InputForm.css',
+        SocialMediaCSS:'public/styles/SocialMedia.css'
       },
       extension: ['', '.js', '.jsx']
   },

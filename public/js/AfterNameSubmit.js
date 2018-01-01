@@ -21,8 +21,14 @@ $(document).ready(function () {
         setTimeout(() => {
             $("#nav-wrapper").removeClass("nav-dispaly-none");
             $("#nav-wrapper").addClass("nav-display-animation");
+            $(".social").removeClass("hide");
+            $(".social").addClass("social-animation")
             $('#page3').removeClass('hide')
             $('#page3').addClass('show')
+            $('#page2').removeClass('hide')
+            $('#page2').addClass('show-services')
+            $('#page5').removeClass('hide')
+            $('#page5').addClass('show-services')
         }, 3000);
     })
     

@@ -7,19 +7,21 @@ body{
     position: absolute;
     width:100vw;
     height: 100vh;
+    background-color: #eeeeee
 }
 .page2{
     position: absolute;
     top:100vh;
     width:100vw;
     height: 100vh;
-    background-color: #eeeeee
+    background-color: white;
 }
 .page3{
     position: absolute;
     top:200vh;
     width:100vw;
-    height: 100vh;
+    height: 120vh;
+    background-color: #eeeeee
 }
 .page4{
     position: absolute;
@@ -39,4 +41,18 @@ body{
     width:100vw;
     height: 100vh;
 }
-
+.hide{
+    display: none
+  }
+  .show{
+    display: block;
+    font-family: 'Poiret One', cursive;
+  }
+  #heading{
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+    /* position: absolute; */
+    left: 3vmax;
+    top: 10vmax;
+    font-size: 3vmax;
+  }

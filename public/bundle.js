@@ -140,6 +140,9 @@
 	__webpack_require__(214);
 	__webpack_require__(215);
 	__webpack_require__(217);
+	__webpack_require__(219);
+	__webpack_require__(220);
+	__webpack_require__(222);
 
 	var App = function (_Component) {
 	  _inherits(App, _Component);
@@ -20643,7 +20646,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Sacramento);", ""]);
 
 	// module
-	exports.push([module.id, ".input-wrapper {\n  opacity: 0;\n  top: 45vh;\n  left: 60vw;\n  position: absolute;\n}\n\n.input-wrapper::after {\n  content: attr(data-text);\n  font-size: 2vmax;\n  line-height: 0;\n  height: 0;\n  max-width: 100%;\n  font-family: 'Sacramento', cursive;\n  border-bottom: 3px solid black;\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  height: 3px;\n  overflow: hidden;\n  user-select: none;\n  color: transparent;\n}\n\ninput {\n  color: black;\n  border: none;\n  padding: 0;\n  border-radius: 0;\n  outline: none;\n  width: auto;\n  min-width: 100%;\n  font-size: 2vmax;\n  line-height: 3em;\n  font-family: 'Sacramento', cursive;\n  border-bottom: 3px solid #33333357;\n  background-color: transparent;\n}\n::-webkit-input-placeholder { /* Chrome/Opera/Safari */\n  color:#33333357;\n}\n.input-animation{\n  animation: input 1.5s cubic-bezier(0.6, -0.28, 0.74, 0.05) forwards;\n  animation-delay: 4.5s\n}\n@keyframes input{\n  from{\n    opacity: 0;\n  }\n  to{\n    opacity: 1;\n  }\n}\n.input-animation-go{\n  animation: inputGo 1.5s cubic-bezier(0.6, -0.28, 0.74, 0.05) forwards;\n}\n@keyframes inputGo{\n  from{\n    opacity: 1;\n  }\n  to{\n    opacity: 0;\n  }\n}", ""]);
+	exports.push([module.id, ".input-wrapper {\n  opacity: 0;\n  top: 45vh;\n  left: 60vw;\n  position: absolute;\n}\n\n.input-wrapper::after {\n  content: attr(data-text);\n  font-size: 2vmax;\n  line-height: 0;\n  height: 0;\n  max-width: 100%;\n  font-family: 'Sacramento', cursive;\n  font-weight: bolder;\n  border-bottom: 3px solid black;\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  height: 3px;\n  overflow: hidden;\n  user-select: none;\n  color: transparent;\n}\n\n#page1 input {\n  color: black;\n  border: none;\n  padding: 0;\n  border-radius: 0;\n  outline: none;\n  width: auto;\n  min-width: 100%;\n  font-size: 2vmax;\n  line-height: 3em;\n  font-family: 'Sacramento', cursive;\n  border-bottom: 3px solid #33333357;\n  background-color: transparent;\n}\n::-webkit-input-placeholder { /* Chrome/Opera/Safari */\n  color:#aeaeae\n}\n.input-animation{\n  animation: input 1.5s cubic-bezier(0.6, -0.28, 0.74, 0.05) forwards;\n  animation-delay: 4.5s\n}\n@keyframes input{\n  from{\n    opacity: 0;\n  }\n  to{\n    opacity: 1;\n  }\n}\n.input-animation-go{\n  animation: inputGo 1.5s cubic-bezier(0.6, -0.28, 0.74, 0.05) forwards;\n}\n@keyframes inputGo{\n  from{\n    opacity: 1;\n  }\n  to{\n    opacity: 0;\n  }\n}", ""]);
 
 	// exports
 
@@ -21367,8 +21370,14 @@
 	        setTimeout(function () {
 	            $("#nav-wrapper").removeClass("nav-dispaly-none");
 	            $("#nav-wrapper").addClass("nav-display-animation");
+	            $(".social").removeClass("hide");
+	            $(".social").addClass("social-animation");
 	            $('#page3').removeClass('hide');
 	            $('#page3').addClass('show');
+	            $('#page2').removeClass('hide');
+	            $('#page2').addClass('show-services');
+	            $('#page5').removeClass('hide');
+	            $('#page5').addClass('show-services');
 	        }, 3000);
 	    });
 
@@ -23144,7 +23153,7 @@
 
 
 	// module
-	exports.push([module.id, "body{\n    margin: 0;\n    background-color:white;margin:0px;\n    overflow-x: hidden;\n}\n#page1{\n    position: absolute;\n    width:100vw;\n    height: 100vh;\n}\n.page2{\n    position: absolute;\n    top:100vh;\n    width:100vw;\n    height: 100vh;\n    background-color: #eeeeee\n}\n.page3{\n    position: absolute;\n    top:200vh;\n    width:100vw;\n    height: 100vh;\n}\n.page4{\n    position: absolute;\n    top:300vh;\n    width:100vw;\n    height: 100vh;\n}\n.page5{\n    position: absolute;\n    top:400vh;\n    width:100vw;\n    height: 100vh;\n}\n.page6{\n    position: absolute;\n    top:500vh;\n    width:100vw;\n    height: 100vh;\n}\n\n", ""]);
+	exports.push([module.id, "body{\n    margin: 0;\n    background-color:white;margin:0px;\n    overflow-x: hidden;\n}\n#page1{\n    position: absolute;\n    width:100vw;\n    height: 100vh;\n    background-color: #eeeeee\n}\n.page2{\n    position: absolute;\n    top:100vh;\n    width:100vw;\n    height: 100vh;\n    background-color: white;\n}\n.page3{\n    position: absolute;\n    top:200vh;\n    width:100vw;\n    height: 120vh;\n    background-color: #eeeeee\n}\n.page4{\n    position: absolute;\n    top:300vh;\n    width:100vw;\n    height: 100vh;\n}\n.page5{\n    position: absolute;\n    top:400vh;\n    width:100vw;\n    height: 100vh;\n}\n.page6{\n    position: absolute;\n    top:500vh;\n    width:100vw;\n    height: 100vh;\n}\n.hide{\n    display: none\n  }\n  .show{\n    display: block;\n    font-family: 'Poiret One', cursive;\n  }\n  #heading{\n    font-family: 'Poiret One', cursive;\n    font-weight: bolder;\n    /* position: absolute; */\n    left: 3vmax;\n    top: 10vmax;\n    font-size: 3vmax;\n  }", ""]);
 
 	// exports
 
@@ -23235,18 +23244,13 @@
 	            $('.four').addClass('active');
 	            $('.five').removeClass('active');
 	            $('.five').addClass('li-color');
-	        } else if ($window.scrollTop() >= window.innerHeight * 3.6 && $window.scrollTop() < window.innerHeight * 4.6) {
+	        } else if ($window.scrollTop() >= window.innerHeight * 3.6 && $window.scrollTop() < window.innerHeight * 5) {
 	            $('.four').removeClass('active');
 	            $('.four').addClass('li-color');
 	            $('.five').removeClass('li-color');
 	            $('.five').addClass('active');
 	            $('.six').removeClass('active');
 	            $('.six').addClass('li-color');
-	        } else if ($window.scrollTop() >= window.innerHeight * 4.6 && $window.scrollTop() < window.innerHeight * 6) {
-	            $('.five').removeClass('active');
-	            $('.five').addClass('li-color');
-	            $('.six').removeClass('li-color');
-	            $('.six').addClass('active');
 	        }
 	    });
 	});
@@ -23273,8 +23277,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../node_modules/css-loader/index.js!./Skills.css", function() {
-				var newContent = require("!!../../node_modules/css-loader/index.js!./Skills.css");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!./Cards.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!./Cards.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -23292,7 +23296,7 @@
 
 
 	// module
-	exports.push([module.id, "/**\n* VARIABLES\n**/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n\n/**\n* CARD\n**/\n#html .card {\n  position: absolute;\n  top: 3vmax;\n  left: 28vmax;\n  width: 19vmax;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n#CSS .card {\n  position: absolute;\n  top: 3vmax;\n  left: 53vmax;\n  width: 19vmax;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n#JS .card {\n  position: absolute;\n  top: 3vmax;\n  left: 78vmax;\n  width: 19vmax;;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n#AI .card {\n  position: absolute;\n  top: 28vmax;\n  left: 3vmax;\n  width: 19vmax;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n#Bootstrap .card {\n  position: absolute;\n  top: 28vmax;\n  left: 28vmax;\n  width: 19vmax;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n#GSAP .card {\n  position: absolute;\n  top: 28vmax;\n  left: 53vmax;\n  width: 19vmax;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n#React .card {\n  position: absolute;\n  top: 28vmax;\n  left: 78vmax;\n  width: 19vmax;\n  background-color: #fff;\n  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  -webkit-transition: -webkit-box-shadow 0.5s;\n  transition: -webkit-box-shadow 0.5s;\n  transition: box-shadow 0.5s;\n  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;\n}\n.card a {\n  color: inherit;\n  text-decoration: none;\n}\n\n.card:hover {\n  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);\n          box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);\n}\n\n/**\n* DATE\n**/\n/*  */\n\n/**\n* THUMB\n**/\n.card__thumb {\n  height: 12.76vmax;\n  overflow: hidden;\n  background-color: #000;\n  -webkit-transition: height 0.5s;\n  transition: height 0.5s;\n  /*background: url('http://lorempicsum.com/futurama/370/245/3') no-repeat;\n  background-size: 100%;*/\n}\n.card__thumb img{\n    max-height:100%;\n  display: block;\n  opacity: 1;\n  -webkit-transform: scale(1);\n          transform: scale(1);\n  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;\n  transition: opacity 0.5s, -webkit-transform 0.5s;\n  transition: opacity 0.5s, transform 0.5s;\n  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;\n}\n.card:hover .card__thumb {\n    height: 150px;\n}\n\n.card:hover .card__thumb img {\n\n  opacity: 0.6;\n  -webkit-transform: scale(1.2);\n          transform: scale(1.2);\n}\n\n/**\n* BODY\n**/\n.card__body {\n  position: relative;\n  height: 9.2vmax;\n  padding: 20px;\n  -webkit-transition: height 0.5s;\n  transition: height 0.5s;\n}\n.card:hover .card__body {\n  height: 15.6vmax;\n}\n\n.card__category {\n  font-family: 'Poiret One', cursive;\n  font-weight: bolder;\n  position: absolute;\n  top: -25px;\n  left: 0;\n  height: 25px;\n  padding: 0 15px;\n  background-color: #eeeeee;\n  color: black;\n  text-transform: uppercase;\n  font-size: 11px;\n  line-height: 25px;\n}\n\n.card__title {\n  font-family: 'Poiret One', cursive;\n  margin: 0;\n  padding: 0 0 10px 0;\n  color: #000;\n  font-size: 1.14vmax;\n  font-weight: bold;\n  text-transform: uppercase;\n}\n\n.card__subtitle {\n  font-family: 'Poiret One', cursive;\n  margin: 0;\n  padding: 0 0 10px 0;\n  font-size: 1vmax;\n  color: rgba(0, 0, 0, 0.575);\n}\n\n.card__description {\n  font-family: 'Poiret One', cursive;\n  font-weight: bolder;\n  position: absolute;\n  left: 1.1vmax;\n  right: 1.1vmax;\n  bottom: 2.91vmax;\n  margin: 0;\n  padding: 0;\n  color: #666C74;\n  line-height: 1.4vmax;\n  opacity: 0;\n  -webkit-transform: translateY(2.34vmax);\n          transform: translateY(2.34vmax);\n  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;\n  transition: opacity 0.3s, -webkit-transform 0.3s;\n  transition: opacity 0.3s, transform 0.3s;\n  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;\n  -webkit-transition-delay: 0s;\n          transition-delay: 0s;\n}\n.card:hover .card__description {\n  opacity: 1;\n  -webkit-transform: translateY(0);\n          transform: translateY(0);\n  -webkit-transition-delay: 0.2s;\n          transition-delay: 0.2s;\n}\n.hide{\n  display: none\n}\n.show{\n  display: block;\n  font-family: 'Poiret One', cursive;\n}\n#heading{\n  font-weight: bolder;\n  position: absolute;\n  left: 3vmax;\n  top: 10vmax;\n  font-size: 3vmax;\n}\n", ""]);
+	exports.push([module.id, ".hide-cards{\n    display: none;\n}\n.show-card{\n    opacity: 0;\n    display: block;\n    animation: cardShow 1s forwards;\n    animation-delay: 1s\n}\n@keyframes cardShow{\n    to{\n        opacity: 1;\n    }\n}\n  .inspired {\n    border: 1px solid rgba(0, 0, 0, 0.1);\n    border-radius: 4px;\n    font-weight: 400;\n    position: absolute;\n    bottom: 6px;\n    right: 6px;\n    z-index: 10;\n  }\n  .inspired a {\n    color: rgba(0, 0, 0, 0.4);\n    display: inline-block;\n    font-size: 12px;\n    padding: 0 24px 10px;\n    text-decoration: none;\n  }\n  .message {\n    color: #e7e7e7;\n    text-shadow: 0 0 3px #b4b4b4;\n    font-size: 70px;\n    font-weight: 200;\n    letter-spacing: -0.01em;\n    line-height: 60px;\n    position: absolute;\n    transform: rotate(-31deg) translate3d(50%, 130%, 0);\n    width: 3em;\n  }\n  .card {\n    background: #ff6565;\n    border-radius: 16px;\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4);\n    height: 45vw;\n    max-height: 450px;\n    max-width: 320px;\n    min-height: 225px;\n    min-width: 160px;\n    position: absolute;\n    transition: all cubic-bezier(0.57, 1.46, 0.97, 1.3) 1s;\n    width: 32vw;\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n  }\n  .card-card1 {\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 4px 12px 0 rgba(151, 150, 146, 0.4);\n    color: white;\n  }\n  .card-card2 {\n    color: white;\n  }\n  .card-card2 .card__value {\n    transform: translatex(-2px);\n  }\n  .card-card2 .card__suit {\n    margin-top: 0.8rem;\n  }\n  .card-card3 {\n    color: white;\n  }\n  .card-card3 .card__suit {\n    margin-top: 0.8rem;\n  }\n  .card-card4 {\n    color: white;\n  }\n  .card-card4 .card__suit {\n    margin-top: 0.7rem;\n  }\n  .card__face {\n    padding: 1.8rem 1.6rem;\n    position: absolute;\n  }\n  .card__face--btm {\n    bottom: 0;\n    right: 0;\n    transform: rotate(180deg);\n  }\n  .card__value {\n    display: block;\n    text-align: center;\n    width: 22px;\n  }\n  .card__suit {\n    display: block;\n    margin-top: 0.5rem;\n  }\n  div.perspective {\n    height: 100vh;\n    perspective: 2000px;\n    position: absolute;\n    width: 100vw;\n  }\n  .card-container {\n    cursor: pointer;\n    left: 50%;\n    position: absolute;\n    top: 40%;\n    transform: rotateX(35deg) translate3d(-50%, -50%, 0);\n    height: 45vw;\n    width: 32vw;\n    max-height: 450px;\n    max-width: 320px;\n  }\n  .card-card1 {\n    transform: rotate(-31deg) translate3d(-50%, -10%, 0);\n  }\n  .card-card2 {\n    transform: rotate(-31deg) translate3d(-49.5%, -10.5%, 0);\n  }\n  .card-card3 {\n    transform: rotate(-31deg) translate3d(-49%, -11%, 0);\n  }\n  .card-card4 {\n    transform: rotate(-31deg) translate3d(-48.5%, -11.5%, 0);\n  }\n  .card-container.spread .card-card1 {\n    transform: rotate(-31deg) translate3d(-50%, -10%, 0);\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 4px 12px 0 rgba(151, 150, 146, 0.4);\n  }\n  .card-container.spread .card-card2 {\n    transform: rotate(-4.5deg) translatex(-22%);\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 2px 6px 0 rgba(151, 150, 146, 0.4);\n  }\n  .card-container.spread .card-card3 {\n    transform: rotate(5.8deg) translatex(10%);\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 2px 4px 0 rgba(151, 150, 146, 0.4);\n  }\n  .card-container.spread .card-card4 {\n    transform: rotate(22.5deg) translate3d(40%, -5%, 0);\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 2px 4px 0 rgba(151, 150, 146, 0.4);\n  }\n  @keyframes card1 {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 1;\n    }\n  }\n  ", ""]);
 
 	// exports
 
@@ -23318,8 +23322,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../node_modules/css-loader/index.js!./Cards.css", function() {
-				var newContent = require("!!../../node_modules/css-loader/index.js!./Cards.css");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!./Skills.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!./Skills.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -23337,7 +23341,150 @@
 
 
 	// module
-	exports.push([module.id, ".hide-cards{\n    display: none;\n}\n.show-card{\n    opacity: 0;\n    display: block;\n    animation: cardShow 1s forwards;\n    animation-delay: 1s\n}\n@keyframes cardShow{\n    to{\n        opacity: 1;\n    }\n}\n  .inspired {\n    border: 1px solid rgba(0, 0, 0, 0.1);\n    border-radius: 4px;\n    font-weight: 400;\n    position: absolute;\n    bottom: 6px;\n    right: 6px;\n    z-index: 10;\n  }\n  .inspired a {\n    color: rgba(0, 0, 0, 0.4);\n    display: inline-block;\n    font-size: 12px;\n    padding: 0 24px 10px;\n    text-decoration: none;\n  }\n  .message {\n    color: #e7e7e7;\n    text-shadow: 0 0 3px #b4b4b4;\n    font-size: 70px;\n    font-weight: 200;\n    letter-spacing: -0.01em;\n    line-height: 60px;\n    position: absolute;\n    transform: rotate(-31deg) translate3d(50%, 130%, 0);\n    width: 3em;\n  }\n  .card {\n    background: #ff6565;\n    border-radius: 16px;\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4);\n    height: 45vw;\n    max-height: 450px;\n    max-width: 320px;\n    min-height: 225px;\n    min-width: 160px;\n    position: absolute;\n    transition: all cubic-bezier(0.57, 1.46, 0.97, 1.3) 1s;\n    width: 32vw;\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n  }\n  .card-card1 {\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 4px 12px 0 rgba(151, 150, 146, 0.4);\n    color: white;\n  }\n  .card-card2 {\n    color: white;\n  }\n  .card-card2 .card__value {\n    transform: translatex(-2px);\n  }\n  .card-card2 .card__suit {\n    margin-top: 0.8rem;\n  }\n  .card-card3 {\n    color: white;\n  }\n  .card-card3 .card__suit {\n    margin-top: 0.8rem;\n  }\n  .card-card4 {\n    color: white;\n  }\n  .card-card4 .card__suit {\n    margin-top: 0.7rem;\n  }\n  .card__face {\n    padding: 1.8rem 1.6rem;\n    position: absolute;\n  }\n  .card__face--btm {\n    bottom: 0;\n    right: 0;\n    transform: rotate(180deg);\n  }\n  .card__value {\n    display: block;\n    text-align: center;\n    width: 22px;\n  }\n  .card__suit {\n    display: block;\n    margin-top: 0.5rem;\n  }\n  div.perspective {\n    height: 100vh;\n    perspective: 2000px;\n    position: absolute;\n    width: 100vw;\n  }\n  .card-container {\n    cursor: pointer;\n    left: 50%;\n    position: absolute;\n    top: 40%;\n    transform: rotateX(35deg) translate3d(-50%, -50%, 0);\n    height: 45vw;\n    width: 32vw;\n    max-height: 450px;\n    max-width: 320px;\n  }\n  .card-card1 {\n    transform: rotate(-31deg) translate3d(-50%, -10%, 0);\n  }\n  .card-card2 {\n    transform: rotate(-31deg) translate3d(-49.5%, -10.5%, 0);\n  }\n  .card-card3 {\n    transform: rotate(-31deg) translate3d(-49%, -11%, 0);\n  }\n  .card-card4 {\n    transform: rotate(-31deg) translate3d(-48.5%, -11.5%, 0);\n  }\n  .card-container.spread .card-card1 {\n    transform: rotate(-31deg) translate3d(-50%, -10%, 0);\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 4px 12px 0 rgba(151, 150, 146, 0.4);\n  }\n  .card-container.spread .card-card2 {\n    transform: rotate(-4.5deg) translatex(-22%);\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 2px 6px 0 rgba(151, 150, 146, 0.4);\n  }\n  .card-container.spread .card-card3 {\n    transform: rotate(5.8deg) translatex(10%);\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 2px 4px 0 rgba(151, 150, 146, 0.4);\n  }\n  .card-container.spread .card-card4 {\n    transform: rotate(22.5deg) translate3d(40%, -5%, 0);\n    box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 2px 4px 0 rgba(151, 150, 146, 0.4);\n  }\n  @keyframes card1 {\n    0% {\n      opacity: 0;\n    }\n    100% {\n      opacity: 1;\n    }\n  }\n  ", ""]);
+	exports.push([module.id, "#tools{\n  font-family: 'Poiret One', cursive;\n  position: absolute;\n  bottom: 5%;\n  left: 25%;\n  font-size: 1.5vmax;\n  font-weight: 800;\n}\n.show-services{\n  font-weight: bolder;\n  display: block;\n  /* font-family: 'Poiret One', cursive; */\n}\n#heading-services{\n  font-family: 'Poiret One', cursive;\n  font-weight: 500;   \n  top: 2vmax;\n  font-size: 2.5rem\n}\n.services{\n    margin-top: 15vh;\n    margin-bottom: 10vh;\n  }\n  h1{\n    font-size:25px;\n    text-align: left;\n    text-transform:capitalize;\n  }\n  .service-box{\n   position: relative;\n   overflow: hidden;\n   margin-bottom:10px;\n   perspective:1000px;\n   -webkit-perspective:1000px;\n  }\n  .service-icon{\n   width: 100%;\n   height: 220px;\n   padding: 20px;\n   text-align: center;\n   transition: all .5s ease;\n  }\n  \n  .service-content{\n   position: absolute;\n   top: 0;\n   left: 0;\n   z-index: 1;\n   opacity: 0;\n   width: 100%;\n   height: 220px;\n   padding: 20px;\n   text-align: center;\n   transition: all .5s ease;\n   background-color: #474747;\n   backface-visibility:hidden;\n   transform-style: preserve-3d;\n   -webkit-transform: translateY(110px) rotateX(-90deg);\n   -moz-transform: translateY(110px) rotateX(-90deg);\n   -ms-transform: translateY(110px) rotateX(-90deg);\n   -o-transform: translateY(110px) rotateX(-90deg);\n   transform: translateY(110px) rotateX(-90deg);\n  }\n  .service-box .service-icon .front-content{\n   position: relative;\n   top:80px;\n   -webkit-transform: translateY(-50%);\n   -moz-transform: translateY(-50%);\n   -ms-transform: translateY(-50%);\n   -o-transform: translateY(-50%);\n   transform: translateY(-50%);\n  }\n  \n  .service-box .service-icon .front-content i {\n   font-size: 28px;\n   color: #fff;\n   font-weight: normal;\n  }\n  \n  .service-box .service-icon .front-content h3 {\n   font-size: 15px;\n   color: #fff;\n   text-align: center;\n   margin-bottom: 15px;\n   text-transform: uppercase;\n  }\n  .service-box .service-content h3 {\n   font-size: 15px;\n   font-weight: 700;\n   color: #fff;\n   margin-bottom:10px;\n   text-transform: uppercase;\n  }\n  .service-box .service-content p {\n   font-size: 13px;\n   color: #b1b1b1;\n   margin:0;\n  }\n  .yellow{background-color: #ffc000;}\n  .orange{background-color: #fc7f0c;}\n  .red{background-color: #e84b3a;}\n  .grey{background-color: #474747;}\n  .service-box:hover .service-icon{\n   opacity: 0;\n   -webkit-transform: translateY(-110px) rotateX(90deg);\n   -moz-transform: translateY(-110px) rotateX(90deg);\n   -ms-transform: translateY(-110px) rotateX(90deg);\n   -o-transform: translateY(-110px) rotateX(90deg);\n   transform: translateY(-110px) rotateX(90deg);\n  }\n  .service-box:hover .service-content {\n   opacity: 1;\n   -webkit-transform: rotateX(0);\n   -moz-transform: rotateX(0);\n   -ms-transform: rotateX(0);\n   -o-transform: rotateX(0);\n   transform: rotateX(0);\n  }\n  a, .sec-contact .btn {\n    -webkit-transition: all .25s;\n    transition: all .25s;\n  }\n  \n  /*=Typography=*/\n  html {\n    font-size: 16px;\n  }\n  \n  body {\n    font-family: 'Open sans', sans-serif;\n    font-weight: 300;\n  }\n  \n  .navbar a,\n  .sec-about p {\n    text-align: center;\n  }\n  \n  .navbar a {\n    font-size: 16px;\n  }\n  \n  .navbar .fa-external-link {\n    font-size: 10px;\n  }\n  \n  .main-heading {\n    font-family: 'Open sans', sans-serif;\n    font-weight: 300;\n    text-align: center;\n    letter-spacing: 9px;\n    text-transform: uppercase;\n  }\n  \n  .container > h1 {\n    font-weight: 300;\n    text-align: center;\n    text-transform: uppercase;\n  }\n  \n  p {\n    font-size: 16px;\n    line-height: 1.5;\n  }\n  \n  .sec-about a {\n    text-decoration: underline;\n  }\n  \n  .sec-services h2,\n  .sec-services p {\n    font-weight: 300;\n    text-align: center;\n  }\n  \n  .sec-testimonials p {\n    font-style: italic;\n  }\n  \n  .sec-contact .btn {\n    text-transform: uppercase;\n  }\n  \n  .soc-media-ul a {\n    text-align: center;\n    text-decoration: none;\n  }\n  \n  /*=Base=*/\n  section {\n    padding: 5em 0;\n  }\n  \n  footer {\n    padding: 3em 0;\n  }\n  \n  @media screen and (max-width: 768px) and (min-width: 485px) {\n    form {\n      max-width: 70%;\n    }\n  }\n  \n  ul {\n    padding: 0;\n    margin: 0;\n    list-style-type: none;\n  }\n  \n  hr {\n    margin-bottom: 3em;\n    width: 7%;\n  }\n  \n  /*=Layout=*/\n  .sec-folio .row {\n    margin-bottom: 3em;\n  }\n  \n  .sec-folio img {\n    max-width: 100%;\n  }\n  \n  /*Header*/\n  .navbar-default {\n    background: #fff;\n  }\n  \n  .navbar .fa-external-link {\n    vertical-align: top;\n  }\n  \n  .navbar-default .navbar-nav > li > a:hover,\n  .navbar-default .navbar-nav > li > a:focus {\n    color: #ad0000;\n  }\n  \n  .navbar-default .navbar-nav > li > a:active {\n    color: #940000;\n  }\n  \n  /*Main*/\n  .sec-main {\n    position: relative;\n    height: 560px;\n    background: url(https://source.unsplash.com/kVf7VRgg4p8/1920x1080) no-repeat center center;\n    background-size: cover;\n  }\n  .sec-main:after {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n  }\n  \n  .main-heading {\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    z-index: 2;\n    padding: 0;\n    margin: auto;\n    height: 40px;\n    color: #fff;\n  }\n  \n  /*About*/\n  .sec-about a {\n    color: #000;\n  }\n  .sec-about a:hover, .sec-about a:focus {\n    color: #ad0000;\n  }\n  \n  /*Services*/\n  .sec-services {\n    background:white;\n  }\n  \n  .sec-services i {\n    display: block;\n    margin: auto;\n    width: 45px;\n  }\n  \n  .sec-services .fa-paint-brush {\n    width: 64px;\n  }\n  \n  .sec-services .fa-code {\n    width: 68px;\n  }\n  \n  .sec-services h2 {\n    margin: 1em 0;\n  }\n  \n  /*Testimonials*/\n  .sec-testimonials {\n    background: #f9f9f9;\n  }\n  \n  /*Contact*/\n  .sec-contact .form-control:focus {\n    border-color: #ad0000;\n    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);\n            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);\n  }\n  \n  .sec-contact .btn {\n    padding: .5rem 1.75rem;\n    background: #000;\n    font-size: .95rem;\n    color: #fff;\n  }\n  .sec-contact .btn:hover, .sec-contact .btn:focus {\n    background: #ad0000;\n    border-color: #7a0000;\n  }\n  \n  /*Footer*/\n  footer {\n    background: #000;\n  }\n  \n  .soc-media-ul {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n  }\n  \n  .soc-media-ul li:not(:first-child) a {\n    margin-left: 1em;\n  }\n  \n  .soc-media-ul a {\n    display: block;\n    padding: 0.5em .65rem;\n    font-size: 1rem;\n    color: #fff;\n    border-radius: 50%;\n    border: 2px solid;\n  }\n  .soc-media-ul a:hover, .soc-media-ul a:focus {\n    color: #ad0000;\n  }\n  ", ""]);
+
+	// exports
+
+
+/***/ },
+/* 219 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
+
+	// When the browser is ready...
+	$(function () {
+	    // Initialize Firebase
+	    var config = {
+	        apiKey: "AIzaSyDvf1BkIw-IZ_NFFd1g_QI6qMLMrVFuXOk",
+	        authDomain: "form-submit-44689.firebaseapp.com",
+	        databaseURL: "https://form-submit-44689.firebaseio.com",
+	        projectId: "form-submit-44689",
+	        storageBucket: "",
+	        messagingSenderId: "559169214737"
+	    };
+
+	    firebase.initializeApp(config);
+
+	    // Reference messages collection
+
+	    var messagesRef = firebase.database().ref('messages');
+
+	    $(".button").click(function (e) {
+	        e.preventDefault();
+	        var $name = $('#name').val();
+	        var $email = $('#email').val();
+	        var $message = $('#msg').val();
+	        saveMessage($name, $email, $message);
+	        setTimeout(function () {
+	            $('#name').val('');
+	            $('#email').val('');
+	            $('#msg').val('');
+	            $("#confirm").removeClass("hide");
+	        }, 1000);
+	        console.log(10);
+	        setTimeout(function () {
+	            $("#confirm").addClass("hide");
+	        }, 2500);
+	    });
+
+	    function saveMessage(name, email, message) {
+	        var newMessageRef = messagesRef.push();
+	        newMessageRef.set({
+	            name: name,
+	            email: email,
+	            message: message
+	        });
+	    }
+	});
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)))
+
+/***/ },
+/* 220 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(221);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// Prepare cssTransformation
+	var transform;
+
+	var options = {"hmr":true}
+	options.transform = transform
+	// add the styles to the DOM
+	var update = __webpack_require__(170)(content, options);
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../node_modules/css-loader/index.js!./InputForm.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!./InputForm.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 221 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(169)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".about{\n  position: absolute;\n  font-family: 'Poiret One', cursive;\n  font-weight: bolder;   \n  top: 15%;\n  font-size: 2.5rem;\n  left:10%;\n}\n.text{\n  font-size: 1.5vmax;\n  position: absolute;\n  right: 20%;\n  top: 40%;\n  font-family: 'Poiret One', cursive;\n  font-weight: bolder;\n}\n#form{\n  position: absolute;\n  width: 30vw;\n  top: 35%;\n  left: 5%;\n}\n.image-me{\n  position: absolute;\n  max-width: 100%;\n  height: auto;\n  right: 5%;\n  top: 20%;\n  border-radius: 50%;\n}\n#form .container {\n  max-width:600px;\n  margin:0 auto;\n  text-align:center;\n  -webkit-border-radius:6px;\n  -moz-border-radius:6px;\n  border-radius:6px;\n  background-color:#FAFAFA;\n}\n#form  .head {\n  -webkit-border-radius:6px 6px 0px 0px;\n  -moz-border-radius:6px 6px 0px 0px;\n  border-radius:6px 6px 0px 0px;\n  background-color:#2ABCA7;\n  color:#FAFAFA;\n}\n#form  h2 {\n  text-align:center;\n  padding:18px 0 18px 0;\n  font-size: 1.4em;\n}\n#form  input {\n  margin-bottom:10px;\n}\n#form  textarea {\n  height:100px;\n  margin-bottom:10px;\n}\n#form input:first-of-type\n{\n  margin-top:35px;\n}\n#form input, textarea {\n  font-size: 1em;\n  padding: 15px 10px 10px;\n  border: 1px solid #cecece;\n  background: #d7d7d7;\n  color:black;\n  -webkit-border-radius: 5px;\n  -moz-border-radius: 5px;\n  border-radius: 5px;\n  -moz-background-clip: padding;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  width: 80%;\n  max-width: 600px;\n}\n\n#form button {\n  margin-top:15px;\n  margin-bottom:25px;\n  background-color:#2ABCA7;\n  padding: 12px 45px;\n  -ms-border-radius: 5px;\n  -o-border-radius: 5px;\n  border-radius: 5px;\n  border: 1px solid #2ABCA7;\n  -webkit-transition: .5s;\n  transition: .5s;\n  display: inline-block;\n  cursor: pointer;\n  width:30%;\n  color:#fff;\n}\n#form button:hover, .button:hover {\n  background:#19a08c;\n}\n#form label.error {\n    font-family:'Source Sans Pro',arial,sans-serif;\n    font-size:1em;\n    display:block;\n    padding-top:10px;\n    padding-bottom:10px;\n    background-color:#d89c9c;\n    width: 80%;\n    margin:auto;\n    color: #FAFAFA;\n    -webkit-border-radius:6px;\n    -moz-border-radius:6px;\n    border-radius:6px;\n}\n/* media queries */\n@media (max-width: 700px) {\n  label.error {\n    width: 90%;\n  }\n  input, textarea {\n    width: 90%;\n  }\n  button {\n    width:90%;\n  }\n  body {\n  padding-top:10px;\n  }  \n}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 222 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(223);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// Prepare cssTransformation
+	var transform;
+
+	var options = {"hmr":true}
+	options.transform = transform
+	// add the styles to the DOM
+	var update = __webpack_require__(170)(content, options);
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../node_modules/css-loader/index.js!./SocialMedia.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!./SocialMedia.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 223 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(169)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, "   .social-animation{\n    opacity: 0;\n    animation: socialAnimation 1s forwards\n    }\n    @keyframes socialAnimation{\n        to{\n            opacity: 1;\n        }\n   }\n   a, a:visited, a:hover, a:active {\n    text-decoration : none;\n    color: inherit;\n  }\n  .social{\n    z-index: 2;\n    position: fixed;\n    top: 90%;\n    right: 2%;\n  }\n  .social-icons {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n  }\n  .social-icon {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    position: relative;\n    width: 80px;\n    height: 80px;\n    margin: 0 0.5rem;\n    border-radius: 50%;\n    cursor: pointer;\n    font-family: \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif;\n    font-size: 2.5rem;\n    text-decoration: none;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);\n    -webkit-transition: all 0.15s ease;\n    transition: all 0.15s ease;\n  }\n  .social-icon:hover {\n    color: #fff;\n  }\n  .social-icon:hover .tooltip {\n    visibility: visible;\n    opacity: 1;\n    -webkit-transform: translate(-50%, -150%);\n            transform: translate(-50%, -150%);\n  }\n  .social-icon:active {\n    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;\n            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;\n  }\n  .social-icon--linkedin {\n    background: #006599;\n    background: -webkit-gradient(linear, left top, left bottom, from(tint(#006599, 5%)), to(shade(#006599, 5%)));\n    background: linear-gradient(tint(#006599, 5%), shade(#006599, 5%));\n    border-bottom: 1px solid shade(#006599, 20%);\n    color: tint(#006599, 50%);\n  }\n  .social-icon--linkedin:hover {\n    color: tint(#006599, 80%);\n    text-shadow: 0px 1px 0px shade(#006599, 20%);\n  }\n  .social-icon--linkedin .tooltip {\n    background: #006599;\n    background: -webkit-gradient(linear, left top, left bottom, from(tint(#006599, 15%)), to(#006599));\n    background: linear-gradient(tint(#006599, 15%), #006599);\n    color: tint(#006599, 80%);\n  }\n  .social-icon--linkedin .tooltip:after {\n    border-top-color: #006599;\n  }\n  .social-icon--twitter {\n    background: #2b97f1;\n    background: -webkit-gradient(linear, left top, left bottom, from(tint(#2b97f1, 5%)), to(shade(#2b97f1, 5%)));\n    background: linear-gradient(tint(#2b97f1, 5%), shade(#2b97f1, 5%));\n    border-bottom: 1px solid shade(#2b97f1, 20%);\n    color: tint(#2b97f1, 50%);\n  }\n  .social-icon--twitter:hover {\n    color: tint(#2b97f1, 80%);\n    text-shadow: 0px 1px 0px shade(#2b97f1, 20%);\n  }\n  .social-icon--twitter .tooltip {\n    background: #2b97f1;\n    background: -webkit-gradient(linear, left top, left bottom, from(tint(#2b97f1, 15%)), to(#2b97f1));\n    background: linear-gradient(tint(#2b97f1, 15%), #2b97f1);\n    color: tint(#2b97f1, 80%);\n  }\n  .social-icon--twitter .tooltip:after {\n    border-top-color: #2b97f1;\n  }\n  /* .social-icon--codepen {\n    background: #000;\n    background: -webkit-gradient(linear, left top, left bottom, from(tint(#000, 5%)), to(shade(#000, 5%)));\n    background: linear-gradient(tint(#000, 5%), shade(#000, 5%));\n    border-bottom: 1px solid shade(#000, 20%);\n    color: tint(#000, 50%);\n  }\n  .social-icon--codepen:hover {\n    color: tint(#000, 80%);\n    text-shadow: 0px 1px 0px shade(#000, 20%);\n  }\n  .social-icon--codepen .tooltip {\n    background: #000;\n    background: -webkit-gradient(linear, left top, left bottom, from(tint(#000, 15%)), to(#000));\n    background: linear-gradient(tint(#000, 15%), #000);\n    color: tint(#000, 80%);\n  }\n  .social-icon--codepen .tooltip:after {\n    border-top-color: #000;\n  } */\n  .social-icon--github {\n    background: #4284c0;\n    background: -webkit-gradient(linear, left top, left bottom, from(tint(#4284c0, 5%)), to(shade(#4284c0, 5%)));\n    background: linear-gradient(tint(#4284c0, 5%), shade(#4284c0, 5%));\n    border-bottom: 1px solid shade(#4284c0, 20%);\n    color: tint(#4284c0, 50%);\n  }\n  .social-icon--github:hover {\n    color: tint(#4284c0, 80%);\n    text-shadow: 0px 1px 0px shade(#4284c0, 20%);\n  }\n  .social-icon--github .tooltip {\n    background: #4284c0;\n    background: -webkit-gradient(linear, left top, left bottom, from(tint(#4284c0, 15%)), to(#4284c0));\n    background: linear-gradient(tint(#4284c0, 15%), #4284c0);\n    color: tint(#4284c0, 80%);\n  }\n  .social-icon--github .tooltip:after {\n    border-top-color: #4284c0;\n  }\n  .social-icon i {\n    position: relative;\n    top: 1px;\n  }\n  \n  /* Tooltips */\n  .tooltip {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 50%;\n    padding: 0.8rem 1rem;\n    border-radius: 3px;\n    font-size: 0.8rem;\n    font-weight: bold;\n    opacity: 0;\n    pointer-events: none;\n    text-transform: uppercase;\n    -webkit-transform: translate(-50%, -100%);\n            transform: translate(-50%, -100%);\n    -webkit-transition: all 0.3s ease;\n    transition: all 0.3s ease;\n    z-index: 1;\n  }\n  .tooltip:after {\n    display: block;\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    width: 0;\n    height: 0;\n    content: \"\";\n    border: solid;\n    border-width: 10px 10px 0 10px;\n    border-color: transparent;\n    -webkit-transform: translate(-50%, 100%);\n            transform: translate(-50%, 100%);\n  }", ""]);
 
 	// exports
 

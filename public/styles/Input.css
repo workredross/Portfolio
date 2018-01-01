@@ -13,6 +13,7 @@
   height: 0;
   max-width: 100%;
   font-family: 'Sacramento', cursive;
+  font-weight: bolder;
   border-bottom: 3px solid black;
   position: absolute;
   left: 0;
@@ -23,7 +24,7 @@
   color: transparent;
 }
 
-input {
+#page1 input {
   color: black;
   border: none;
   padding: 0;
@@ -38,7 +39,7 @@ input {
   background-color: transparent;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color:#33333357;
+  color:#aeaeae
 }
 .input-animation{
   animation: input 1.5s cubic-bezier(0.6, -0.28, 0.74, 0.05) forwards;
