@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $("#loader-pre").addClass('loader-pre')
 
     $(".input-id").submit(function( event ) {
         event.preventDefault();

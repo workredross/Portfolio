@@ -298,3 +298,6 @@ figure.project-1.hover:after {
 }
 
 
+.loader-pre{
+  display:none;
+}
