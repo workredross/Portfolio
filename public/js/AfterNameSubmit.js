@@ -3,6 +3,7 @@ $(document).ready(function () {
 
     $(".input-id").submit(function( event ) {
         event.preventDefault();
+        $('.input-id').blur();
         $(".input-id").addClass("input-animation-go")
         $(".loader").addClass("input-animation-go")
         $(".perspective").removeClass("hide-cards")
