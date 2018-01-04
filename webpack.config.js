@@ -1,5 +1,6 @@
 var webpack = require('webpack');
-  module.exports = {
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+module.exports = {
     entry: [
       'script!jquery/dist/jquery.min.js',
       './public/app.js'
@@ -7,12 +8,6 @@ var webpack = require('webpack');
     externals:{
       jquery:'jQuery'
     },
-    plugins:[
-      new webpack.ProvidePlugin({
-        '$': 'jquery',
-        'jQuery': 'jquery'
-      })
-    ],
     output: {
       path: __dirname,
       filename: './public/bundle.js'
@@ -36,8 +31,9 @@ var webpack = require('webpack');
         NavBarJS: 'public/js/NavBar.js',
         SkillsCSS:'public/styles/Skills.css',
         FormSubmitJS : 'public/js/FormSubmit.js',
-        InputFormCSS:'public/styles/InputForm.css',
-        SocialMediaCSS:'public/styles/SocialMedia.css'
+        InputFormCSS: 'public/styles/InputForm.css',
+        SocialMediaCSS: 'public/styles/SocialMedia.css',
+        BlogCSS: 'public/styles/Blogs.css'
       },
       extension: ['', '.js', '.jsx']
   },
@@ -52,6 +48,11 @@ var webpack = require('webpack');
         exclude: /(node_module|bower_components)/
       }
     ]
-
-  }
+  },
+  plugins:[
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'jQuery': 'jquery'
+    })
+  ]
 };

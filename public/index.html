@@ -5,19 +5,36 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css"
   />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="./main.css"> -->
 </head>
 <body>
-  <div id="nav-wrapper" class="nav-dispaly-none">
-    <ul id="nav-bar" class="">
-      <li id="nav-item" class="one">Home</li>
-      <li id="nav-item" class="two">Skills</li>
-      <li id="nav-item" class="three">Blogs</li>
-      <li id="nav-item" class="four">Projects</li>
-      <li id="nav-item" class="five">About</li>
-    </ul>
+
+  <!-- LOADER -->
+
+  <div class="container move-container-loader">
+    <div class="loader col-sm-12 col-lg-12 mx-auto">
+      <div class="inner one mx-auto"></div>
+      <div class="inner two"></div>
+      <div class="inner three"></div>
+    </div>
   </div>
+
+  <!-- Navigation BAR -->
+<div class="container">
+    <div id="nav-wrapper" class="nav-dispaly-none">
+        <ul id="nav-bar" class="">
+          <li id="nav-item" class="one">Home</li>
+          <li id="nav-item" class="two">Skills</li>
+          <li id="nav-item" class="three">Blogs and Projects</li>
+          <li id="nav-item" class="four">About</li>
+        </ul>
+      </div>
+    
+</div>
+  
+  <!-- SOCIAL MEDIA -->
+  
   <div class = "social hide">
     <div class="social-icons">
       <a target="_blank" href="https://github.com/workredross" class="social-icon social-icon--github">
@@ -32,18 +49,9 @@
         <i class="fa fa-linkedin"></i>
         <div class="tooltip">LinkedIn</div>
       </a>
-        <!-- <a class="social-icon social-icon--codepen">
-            <i class="fa fa-codepen"></i>
-            <div class="tooltip">Codepen</div>
-        </a> -->
     </div>
   </div>
   <div id="page1">
-    <div class="loader">
-      <div class="inner one"></div>
-      <div class="inner two"></div>
-      <div class="inner three"></div>
-    </div>
     <div id="wrapper" class="hide-arrow">
       <div id="wrapper-inner">
         <div id="scroll-down">
@@ -171,8 +179,8 @@
     <div id="app"></div>
   </div>
   <div id="page2" class="hide">
-    <div id="tools">    HTML5 &nbsp; CSS3 &nbsp; Bootstrap &nbsp; Java Script &nbsp; jQuery &nbsp; React.js &nbsp; GSAP &nbsp; Abode Illustrator &nbsp;
-    </div>
+    <p id="tools" align="center">    HTML5 &nbsp; CSS3 &nbsp; Bootstrap &nbsp; Java Script &nbsp; jQuery &nbsp; React.js &nbsp; GSAP &nbsp; Abode Illustrator &nbsp;
+    </p>
     <div class="container">
       <div class="row services">
         <div id="heading-services" class="col-md-3 col-sm-3 mt-5">SKILLS</div>
@@ -243,37 +251,100 @@
       </div>
     </section>
   </div>
-  <div id="page3"></div>
-  <div id="page4"></div>
-  <div id="page5" class="hide">
-    <div class="about">About</div>
-    <div id="form">
-      <form id="contact">
-        <div class="container">
-          <div class="head">
-            <h2>Say Hello</h2>
-          </div>
-          <input type="text" name="name" placeholder="Name" id="name" />
-          <br />
-          <input type="email" name="email" placeholder="Email" id="email" />
-          <br />
-          <textarea type="text" name="message" placeholder="Message" id="msg"></textarea>
-          <br />
-          <div id="confirm" class="hide">Message Sent</div>
-          <button id="submit" class="button">
-            Send!
-          </button>
+  <div id="page3" class="hide">
+    <div id="blog">    
+      <h3 id="head-blog">BLOGS</h3>
+      <figure class="snip0017">
+        <img src="./images/blog2.JPG" alt="blog image"/>
+        <figcaption>
+          <h2>I don't need to <span>compromise</span> my principles</h2>
+            <p>Because they don't have the slightest bearing on what happens to me anyway.</p>
+            <a href="https://medium.com/@workredross/get-your-current-weather-f7a00ea5126e" target="blank"></a>
+            </figcaption>
+      </figure>
+      <figure class="snip0017">
+        <img src="./images/blog1.JPG" alt="blog image"/>
+        <figcaption>
+          <h2>If we wanted more <span>leisure</span></h2>
+          <p>We'd invent machines that do things less efficiently.</p>
+          <a href="https://medium.com/@workredross/hand-writing-effect-through-ccs3-and-abobe-illustrator-9cc45b1f80e7" target="blank"></a>
+        </figcaption>
+      </figure>
+      <figure class="snip0017">
+        <img src="./images/blog3.JPG" alt="blog image" />
+        <figcaption>
+          <h2>I <span>propose</span> we leave <span>math</span> </h2>
+          <p>To the machines and go play outside.</p>
+          <a href="https://medium.com/@workredross/create-a-contact-form-and-fetch-its-response-fc21e3b3a237" target="blank"></a>
+        </figcaption>
+      </figure>
+    </div>
+    <div id="projects">
+        <h3 id="head-projects">Projects</h3>
+        <figure class="project-1"><img src="./images/Todo App.png" alt="sample57"/>
+          <figcaption class="caption">
+            <div id="project-comment"><span id="project-comment-span">A Todo app which stores your task.It uses React.JS and also Browser storage so that when refreshed it retains its memory.</span></div>
+            <div class = 'header-porject'>Todo <span class = "header-porject-span" >App</span></div>
+            <div class="icons"><a href="https://floating-brushlands-83089.herokuapp.com/" target="blank"><i class="ion-earth"></i></a><a href="https://github.com/workredross/Todo-App" target="blank"><i class="ion-social-github"></i></a></div>
+          </figcaption>
+        </figure>
+        <figure class="project-1 green"><img src="./images/Message APP3.png"alt="sample37"/>
+          <figcaption class="caption">
+            <div id="project-comment"><span id="project-comment-span">A vanila Java Script based app. It uses Google's Firebase to store the message which can be revied further. </span></div>
+            <div class = 'header-porject'>A Message <span class = "header-porject-span">App</span></div>
+            <div class="icons"><a href="https://pacific-springs-96187.herokuapp.com/" target="blank"><i class="ion-earth"></i></a><a href="https://github.com/workredross/Get-Form-Values" target="blank"><i class="ion-social-github"></i></a></div>
+          </figcaption>
+        </figure>    
+        <figure class="project-1 blue"><img src="./images/Theme1.png"/>
+          <figcaption class="caption">
+            <div id="project-comment"><span id="project-comment-span">A Theme which will work on any device no matter its size.Used Bootstrap framework</span></div>
+            <div class = 'header-porject'>Online Company <span class = "header-porject-span">Theme</span></div>
+            <div class="icons"><a href="https://agile-springs-10317.herokuapp.com/" target="blank"><i class="ion-earth"></i></a><a href="https://github.com/workredross/Theme-1" target="blank"><i class="ion-social-github"></i></a></div>
+          </figcaption>
+        </figure>  
+        <figure class="project-1 green"><img src="./images/Theme2.png" alt="sample37"/>
+          <figcaption class="caption">
+            <div id="project-comment"><span id="project-comment-span"> A responsive theme representing a online book store. Used Bootstap and Java Script frame work.</span></div>
+            <div class = 'header-porject'>A Book <span class = "header-porject-span">Store</span></div>
+            <div class="icons"><a href="https://calm-atoll-32497.herokuapp.com/" target="blank"><i class="ion-earth"></i></a><a href="https://github.com/workredross/Theme-2" target="blank"><i class="ion-social-github"></i></a></div>
+          </figcaption>
+        </figure>  
+    </div>
+    <div >
+        <div class="about">About</div>
+        <div id="form">
+          <form id="contact">
+            <div class="container">
+              <div class="head">
+                <h2>Say Hello</h2>
+              </div>
+              <input type="text" name="name" placeholder="Name" id="name" />
+              <br />
+              <input type="email" name="email" placeholder="Email" id="email" />
+              <br />
+              <textarea type="text" name="message" placeholder="Message" id="msg"></textarea>
+              <br />
+              <div id="confirm" class="hide">Message Sent</div>
+              <button id="submit" class="button">
+                Send!
+              </button>
+            </div>
+          </form>
         </div>
-      </form>
-    </div>
-    <div id="about" class="">
-      <img src="./images/kanishk.jpg" class="image-me" height="250" width="250" alt="image of me">
-    </div>
-    <div class="text">
-      Hello I am Kanishk Srivastava.<br/>
-      I am a front-end web developer
-    </div>
+        <div id="about" class="">
+          <img src="./images/kanishk.jpg" class="image-me" height="250" width="250" alt="image of me">
+        </div>
+        <div class="text">
+          Hello I am Kanishk Srivastava.<br/>
+          I am a <strong>Front-End Web Developer.</strong> </br>
+          kanishk.find[at]gmail.com
+        </div>
+      </div>
+      <div >
+        <p  class='footbottom'>This site uses HTML, CSS, Bootstrap, Java Script, ReactJS, Firebase and APIs.</br>It has many inspired element, but is completely</br><strong>designed and devloped by me.</strong> </p>
+      </div>
   </div>
+
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script type="text/javascript" src="bundle.js"></script>
 </body>

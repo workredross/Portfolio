@@ -16,6 +16,7 @@ require('style!css!SkillsCSS');
 require('FormSubmitJS');
 require('style!css!InputFormCSS');
 require('style!css!SocialMediaCSS');
+require('style!css!BlogCSS');
 
 class App extends Component {
   constructor(props) {

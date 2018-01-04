@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Sacramento');
 .input-wrapper {
   opacity: 0;
-  top: 45vh;
-  left: 60vw;
+  top: 50%;
+  left: 50%;
   position: absolute;
 }
 
@@ -12,7 +11,7 @@
   line-height: 0;
   height: 0;
   max-width: 100%;
-  font-family: 'Sacramento', cursive;
+  font-family: 'Poiret One', cursive;
   font-weight: bolder;
   border-bottom: 3px solid black;
   position: absolute;
@@ -34,7 +33,7 @@
   min-width: 100%;
   font-size: 2vmax;
   line-height: 3em;
-  font-family: 'Sacramento', cursive;
+  font-family: 'Poiret One', cursive;
   border-bottom: 3px solid #33333357;
   background-color: transparent;
 }

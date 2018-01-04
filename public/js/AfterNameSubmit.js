@@ -7,6 +7,7 @@ $(document).ready(function () {
         $(".perspective").removeClass("hide-cards")
         $(".perspective").addClass("show-card")
         setTimeout(() => {
+            $(".move-container-loader").remove()
             $("#wrapper").removeClass("hide-arrow")
             $("#wrapper").addClass("wrapper")
             $("#page2").addClass("page2")
@@ -27,8 +28,8 @@ $(document).ready(function () {
             $('#page3').addClass('show')
             $('#page2').removeClass('hide')
             $('#page2').addClass('show-services')
-            $('#page5').removeClass('hide')
-            $('#page5').addClass('show-services')
+            $('#page4').removeClass('hide')
+            $('#page4').addClass('show-services')
         }, 3000);
     })
     

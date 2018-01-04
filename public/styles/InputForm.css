@@ -1,32 +1,76 @@
+.about {
+  position: absolute;
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;   
+  top: 40%;
+  font-size: 2.5rem;
+  left:10%;
+}
+@media only screen and (min-width: 1024px){
 .about{
   position: absolute;
   font-family: 'Poiret One', cursive;
   font-weight: bolder;   
-  top: 15%;
+  top: 100%;
   font-size: 2.5rem;
   left:10%;
+}
+}
+#form{
+  font-weight: bold;
+  margin-bottom: 10vw;
+  position: absolute;
+  width: 30vw;
+  top: 50%;
+  left: 5%;
+}
+  
+@media only screen and (min-width: 1025px) {
+  #form{
+    font-weight: bold;
+    margin-bottom: 10vw;
+    position: absolute;
+    width: 30vw;
+    top: 120%;
+    left: 5%;
+  }
 }
 .text{
   font-size: 1.5vmax;
   position: absolute;
-  right: 20%;
-  top: 40%;
+  right: 10%;
+  top: 60%;
   font-family: 'Poiret One', cursive;
   font-weight: bolder;
 }
-#form{
-  position: absolute;
-  width: 30vw;
-  top: 35%;
-  left: 5%;
+@media only screen and (min-width: 1025px) {
+  .text{
+    font-size: 1.5vmax;
+    position: absolute;
+    right: 20%;
+    top: 130%;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+  }
 }
+
 .image-me{
   position: absolute;
-  max-width: 100%;
+  max-width: 110%;
   height: auto;
   right: 5%;
-  top: 20%;
+  top: 40%;
   border-radius: 50%;
+}
+@media only screen and (min-width: 1025px) {
+  .image-me{
+    position: absolute;
+    max-width: 110%;
+    height: auto;
+    right: 5%;
+    top: 100%;
+    border-radius: 50%;
+  }
 }
 #form .container {
   max-width:600px;
@@ -126,4 +170,21 @@
   body {
   padding-top:10px;
   }  
+}
+.footbottom{
+  font-size: .8vmax;
+  position: absolute;
+  top: 70%;
+  font-family: 'Poiret One', cursive;
+  font-weight: 400
+}
+@media only screen and (min-width: 1025px) {
+  .footbottom{
+    font-weight: 400;
+    font-size: .8vmax;
+    position: absolute;
+    top: 170%;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+  }
 }

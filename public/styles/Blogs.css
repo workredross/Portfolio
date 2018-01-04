@@ -1,0 +1,300 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+#head-blog{
+  font-weight: bolder;
+  font-size: 2vw
+}
+#blog{
+margin-top: 10%;
+margin-left: 15%
+}
+#blog h2{
+  font-size: 1.2vw;
+}
+#blog p{
+  font-size: 1vw;  
+}
+#blog figure.snip0017 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 1.5vw 2.5vw;
+  min-width: 13.45vw;
+  max-width: 19.14vw;
+  max-height: 13.45vw;
+  width: 100%;
+  background: #e48383;
+  text-align: right;
+}
+#blog figure.snip0017 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#blog figure.snip0017 img {
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+#blog figure.snip0017 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.56vw 3vw;
+  width: 100%;
+  height: 100%;
+}
+#blog figure.snip0017 figcaption::before {
+  position: absolute;
+  top: 1.56vw;
+  right: 100%;
+  bottom: 1.56vw;
+  left: 30px;
+  border-right: .2vw solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+#blog figure.snip0017 h2,
+figure.snip0017 p {
+  margin: 0 0 .26vw ;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+#blog figure.snip0017 h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(-30%, 0%, 0);
+  transform: translate3d(-30%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+#blog figure.snip0017 h2 span {
+  font-weight: 800;
+}
+#blog figure.snip0017 p {
+  font-weight: 200;
+  -webkit-transform: translate3d(0%, -30%, 0);
+  transform: translate3d(0%, -30%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#blog figure.snip0017 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+#blog figure.snip0017:hover img {
+  opacity: .05;
+}
+#blog figure.snip0017:hover figcaption h2,
+figure.snip0017:hover figcaption p {
+  visibility: visible;
+}
+#blog figure.snip0017:hover figcaption h2 {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+#blog figure.snip0017:hover figcaption p {
+  opacity: 0.9;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+#blog figure.snip0017:hover figcaption::before {
+  background: rgba(255, 255, 255, 0);
+  right: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#head-blog{
+  font-weight: bolder;
+  font-size: 2vw
+}
+
+
+
+/* PROJECTS */
+
+#head-projects{
+  font-weight: bolder;
+  font-size: 2vw
+}
+#projects{
+  margin-top: 25%;
+  margin-left: 5%
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.project-1 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 1.5vw 1.5vw;
+  min-width: 13.45vw;
+  max-width: 19.14vw;
+  max-height: 13.45vw;
+  width: 100%;
+  background: #000000;
+}
+figure.project-1 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.project-1 > img {
+  opacity: 1;
+  width: 100%;
+  filter: blur(0px);
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+figure.project-1 .caption {
+  left: 1.56vw;
+  margin-bottom: -2.7vw;
+  position: absolute;
+  right: 1.56vw;
+  text-align: left;
+  bottom: 100%;
+  -webkit-transition: bottom 0.35s;
+  transition: bottom 0.35s;
+}
+figure.project-1 .caption .header-porject {
+  width: 100%;
+  text-align: left;
+  border-radius: 0 0 5px 5px;
+  margin: 0;
+  padding: .78vw 1.04vw;
+  font-size: 1.1em;
+  bottom: 0;
+  font-weight: 300;
+  text-transform: uppercase;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #000000;
+  position: relative;
+  z-index: 1;
+}
+figure.project-1 .caption .header-porject .header-porject-span {
+  font-weight: 800;
+}
+figure.project-1 .caption #project-comment {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  margin: 0;
+  font-size: 0.9em;
+  min-height: 220px;
+}
+figure.project-1 .caption #project-comment #project-comment-span {
+  padding: 15px 20px;
+  position: absolute;
+  bottom: 0;
+}
+figure.project-1 .caption .icons {
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+figure.project-1 .caption .icons i {
+  font-size: 23px;
+  padding: 4px;
+  color: #ffffff;
+  opacity: 1;
+  position: relative;
+  bottom: -90px;
+  opacity: 0;
+  -webkit-transition: bottom 0.35s, opacity 0.35s;
+  transition: bottom 0.35s, opacity 0.35s;
+}
+figure.project-1 .caption .icons a:first-child i {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.project-1 .caption .icons a:nth-child(2) i {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.project-1 .caption .icons a:nth-child(3) i {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+figure.project-1:after {
+  position: absolute;
+  display: block;
+  bottom: -15px;
+  height: 15px;
+  right: 30px;
+  left: 30px;
+  border-radius: 5px 5px 0 0;
+  background-color: #000000;
+  z-index: 2;
+  content: '';
+  -webkit-transition: bottom 0.35s;
+  transition: bottom 0.35s;
+}
+figure.project-1.blue:after,
+figure.project-1.blue .header-porject {
+  background: #20638f;
+}
+figure.project-1.red:after,
+figure.project-1.red .header-porject {
+  background: #962d22;
+}
+
+figure.project-1.green:after,
+figure.project-1.green .header-porject {
+  background: #1e8449;
+}
+
+figure.project-1 a {
+  opacity: 0.7;
+}
+figure.project-1 a:hover {
+  opacity: 1;
+}
+figure.project-1:hover > img,
+figure.project-1.hover > img {
+  opacity: 0.5;
+  filter: blur(5px);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.project-1:hover .caption,
+figure.project-1.hover .caption {
+  bottom: 115px;
+}
+figure.project-1:hover .caption .icons i,
+figure.project-1.hover .caption .icons i {
+  opacity: 1;
+  bottom: -41px;
+}
+figure.project-1:hover .caption::before,
+figure.project-1.hover .caption::before {
+  opacity: 0.8;
+}
+figure.project-1:hover:after,
+figure.project-1.hover:after {
+  bottom: 0;
+}
+
+
