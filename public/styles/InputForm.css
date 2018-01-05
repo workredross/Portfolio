@@ -172,6 +172,7 @@
   }  
 }
 .footbottom{
+  display: none;
   font-size: .6vmax;
   position: absolute;
   top: 75%;
